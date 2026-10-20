@@ -1,0 +1,58 @@
+.logo-conexia{
+    width: 161.3px;
+    height: 20px;
+}
+
+.logo{
+    width: 161.3px !important;
+    height: 20px !important;
+}
+
+.header-container{
+    height: 80px;
+    align-items: center;
+    align-content: center;
+}
+
+.item-dev{
+    background-color: #0a3f54;
+    border: solid 0.5px #00E5FF;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-family: Inter;
+    font-size: 12px !important;
+}
+
+.list-dev{
+    padding: 10px;
+}
+
+.dropdown-item:hover{
+    background-color: #00E5FF !important;
+    color: #0a3f54 !important;
+}
+
+.text-dev-label{
+    font-size:8px;
+}
+
+.bg-item-dev{
+    background-color: #081d20;
+    color: #10b982;
+    padding: 12px;
+    border: solid 0.5px #10b982;
+}
+
+.text-lumin-dev{
+    color: #00E5FF !important;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900; /* Rango completo para fuentes variables */
+  font-display: swap;
+  src: url('../fuentes/JetBrainsMono-VariableFont_wght.ttf') format('woff2');
+}
+
