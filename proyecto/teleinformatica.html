@@ -1,132 +1,453 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI - SENA</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-	<header class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 d-flex justify-content-center justify-content-lg-start align-items-center pt-4 pb-3 text-white">
-							<a href="index.html" class="text-white text-decoration-none">
-								<div id="logo"></div>
-							</a>
-						</div>
-						<div class="col-lg-8 d-lg-flex justify-content-lg-end align-items-center pb-3 pb-lg-0">
-							<!-- Inicio Navbar -->
-							<nav class="navbar navbar-expand-lg p-0">
-								<div class="container-fluid pe-0">
-									<a class="navbar-brand d-lg-none" href="#">Menú</a>
-									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-										<i class="fa-solid fa-bars"></i>
-									</button>
-									<div class="collapse navbar-collapse claro" id="navbarBasic">
-										<ul class="navbar-nav ms-auto mb-0 mb-xl-0 text-center">
-											<li class="nav-item mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-											</li>
-											<li class="nav-item dropdown mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-													Coordinaciones
-												</a>
-												<ul class="dropdown-menu">
-													<li><a class="dropdown-item" href="teleinformatica.html">Teleinformática</a></li>
-													<li><a class="dropdown-item" href="industrias-c.html">Ind. Creativas</a></li>
-													<li><a class="dropdown-item" href="mercadeo.html">Mercadeo</a></li>
-													<li><a class="dropdown-item" href="logistica.html">Logística</a></li>
-													<li><a class="dropdown-item" href="bilinguismo.html">Bilingüismo</a></li>
-													<li><a class="dropdown-item" href="bienestar.html">Bienestar al aprendiz</a></li>
-												</ul>
-											</li>
-											
-										</ul>
-									</div>
-								</div>
-							</nav>
-							<!-- Fin Navbar -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de
+			Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI -
+			SENA</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/teleinformatica.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+			integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+		<script src="./js/componentes/header.js" defer></script>
+	</head>
+	<body>
+		<header-component></header-component>
+
+		<div class="container my-5">
+			<div class="row justify-content-center">
+				<div class="col-12 col-xl-10">
+
+					<div class="text-center mb-4">
+						<div
+							class="d-inline-flex align-items-center flex-wrap justify-content-center gap-2 bg-dark bg-opacity-75 px-4 py-2 rounded-pill border border-cyan border-opacity-50 font-monospace shadow-sm status-pill-container"
+							style="font-size: 0.8rem;">
+
+							<!-- Punto indicador naranja brillante -->
+							<span class="punto-brillante-orange"></span>
+
+							<!-- Segmentos con sus colores específicos -->
+							<span class="text-warning fw-bold">STATUS: READY</span>
+							<span class="text-secondary separator-slash">//</span>
+							<span class="text-cyan">LVL. 2026</span>
+							<span class="text-secondary separator-slash">//</span>
+							<span class="text-cyan">EXP_ONLINE</span>
+							<span class="text-secondary separator-slash">//</span>
+							<span class="text-purple">BETA_BUILD_v4.2</span>
+
 						</div>
 					</div>
+
+					<!-- 2. Ventana / Terminal Principal -->
+					<div
+						class="terminal-frame rounded-4 p-3 p-md-4 position-relative overflow-hidden border border-cyan border-opacity-50 shadow-lg">
+
+						<!-- Barra Superior de la Terminal (macOS UI + Nombre de archivo) -->
+						<div
+							class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom border-secondary border-opacity-25 font-monospace small">
+							<div class="d-flex align-items-center gap-2">
+								<div class="d-flex gap-1 me-2">
+									<span class="btn-dot bg-danger"></span>
+									<span class="btn-dot bg-warning"></span>
+									<span class="btn-dot bg-success"></span>
+								</div>
+								<span class="text-secondary">bash <span class="text-cyan">//</span>
+									triada-creativa.sh</span>
+							</div>
+							<div class="text-secondary d-none d-sm-block"
+								style="font-size: 0.75rem;">
+								CORE <span class="text-cyan">//</span> INNOVACIÓN &amp; DESARROLLO
+							</div>
+						</div>
+
+						<!-- Contenido Central de la Tríada -->
+						<div class="text-center py-3">
+
+							<!-- Logo / Insignia Central -->
+							<div
+								class="d-inline-block p-3 rounded-4 bg-white shadow-lg mb-3 logo-container box-sha">
+								<img src="img/logo-triada-creativa.jpg" alt="Tríada Creativa"
+									class="img-fluid"
+									style="max-height: 70px;">
+								<!-- Nota: Si no tienes la imagen separada, puedes usar texto formateado o ajustar la ruta -->
+							</div>
+
+							<!-- Eslogan -->
+							<div class="font-monospace text-purple mb-4" style="font-size: 0.95rem;">
+								<code>&lt;/&gt; <span class="text-white">Ideas que compilan, talento que
+										conecta</span> &lt;/&gt;</code>
+							</div>
+
+							<!-- Código simulación: const techEcosystem -->
+							<div
+								class="font-monospace text-start bg-dark bg-opacity-50 p-3 rounded-3 border border-secondary border-opacity-25 mb-4 mx-auto overflow-x-auto code-box"
+								style="max-width: 750px;">
+								<span class="text-info">const</span> <span
+									class="text-white">techEcosystem</span> <span
+									class="text-cyan">=</span> <span
+									class="text-warning">["SENA_CGMLTI_2026"]</span><span
+									class="text-secondary">;</span> <span
+									class="text-secondary opacity-75">// Stack &amp; coordinaciones</span>
+							</div>
+
+							<!-- Insignias de Tecnologías (Píldoras de lenguajes) -->
+							<div
+								class="d-flex justify-content-center align-items-center gap-2 flex-wrap mb-4 px-md-4">
+								<span class="badge-tech font-monospace"><i
+										class="fa-brands fa-python text-warning me-1"></i> Python</span>
+								<span class="badge-tech font-monospace"><i
+										class="fa-brands fa-js text-warning me-1"></i> JavaScript / TS</span>
+								<span class="badge-tech font-monospace"><i
+										class="fa-brands fa-java text-danger me-1"></i> Java</span>
+								<span class="badge-tech font-monospace"><i
+										class="fa-brands fa-php text-purple me-1"></i> PHP</span>
+								<span class="badge-tech font-monospace"><i
+										class="fa-solid fa-code text-info me-1"></i> C# (.NET)</span>
+								<span class="badge-tech font-monospace"><i
+										class="fa-brands fa-react text-cyan me-1"></i> React</span>
+								<span class="badge-tech font-monospace"><i
+										class="fa-mobile-screen text-info me-1"></i> Flutter / Dart</span>
+								<span class="badge-tech font-monospace"><i
+										class="fa-solid fa-database text-primary me-1"></i> PostgreSQL /
+									SQL</span>
+								<span class="badge-tech font-monospace"><i
+										class="fa-brands fa-docker text-info me-1"></i> Docker</span>
+							</div>
+
+						</div>
+
+						<!-- Barra Inferior de la Terminal (build status) -->
+						<div
+							class="d-flex align-items-center justify-content-between pt-3 border-top border-secondary border-opacity-25 font-monospace small flex-wrap gap-2">
+							<div class="text-success">
+								&gt; build --production: <span class="fw-bold">100% SUCCESSFUL</span>
+							</div>
+							<div class="text-secondary" style="font-size: 0.75rem;">
+								TRÍADA CREATIVA <span class="text-cyan">&bull;</span> CGMLTI 2026
+							</div>
+						</div>
+
+					</div>
+
+					<!-- 3. Píldora Inferior Institucional -->
+					<div class="text-center mt-4">
+						<div
+							class="d-inline-block bg-dark bg-opacity-75 px-4 py-2 rounded-pill border border-secondary border-opacity-25 font-monospace text-secondary small shadow-sm"
+							style="font-size: 0.75rem; letter-spacing: 1px;border-radius: 6px !important;">
+							<span class="text-cyan">//</span> MUESTRA DE INNOVACIÓN, DESARROLLO Y
+							TELEINFORMÁTICA &bull; <span
+								class="text-orange">CGMLTI 2026</span> <span class="text-cyan">//</span>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
-	</header>	
-  <main class="container proy p-5">
-    <div class="row">
-	  <div class="col text-center pb-5">
-		<img src="img/logo-triada-creativa.jpg" class="img-fluid" alt="Logotipo Triada Creativa">
-	  </div>
-    </div>
-    <div class="row gy-5 fila">
-      <div class="col-lg-6 col-xl-3">
-        <div class="coord soft" data-url="proyectos-software.html">
-          <div class="icono">
-            <i class="fa-solid fa-laptop-code"></i>
-          </div>
-          <h4>Software</h4>
-          <p>La Feria CGMLTI 2026 presentará 24 proyectos destacados entre más de 80 desarrollos de aprendices SENA. Esta muestra exhibirá soluciones de software con metodologías ágiles e inteligencia artificial para retos reales, impulsando la innovación y la transformación digital.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-xl-3">
-        <div class="coord video" data-url="proyectos-videoj.html">
-          <div class="icono">
-            <i class="fa-solid fa-gamepad"></i>
-          </div>
-          <h4>Video juegos</h4>
-          <p>La muestra de Desarrollo de Videojuegos CGMLTI 2026 exhibirá experiencias digitales creadas por aprendices SENA. Esta exposición reunirá juegos interactivos, narrativa y realidad virtual para demostrar el talento, la innovación y el potencial creativo de la industria.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-xl-3">
-        <div class="coord infra" data-url="proyectos-infraestructura.html">
-          <div class="icono">
-            <i class="fa-solid fa-network-wired"></i>
-          </div>
-          <h4>Infraestructura</h4>
-          <p>Esta muestra presentará proyectos de conectividad, ciberseguridad, IoT, robótica y automatización desarrollados por aprendices SENA. Esta exhibición mostrará su talento para diseñar soluciones tecnológicas inteligentes y seguras orientadas a retos reales.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-xl-3">
-        <div class="coord ind" data-url="teleinformatica-conf.html">
-          <div class="icono">
-            <i class="fa-solid fa-person-chalkboard"></i>
-          </div>
-          <h4>Conferencias</h4>
-          <p>Las Conferencias de Teleinformática CGMLTI 2026 reunirán a expertos del sector para compartir conocimientos clave. Este espacio ofrecerá ponencias sobre redes, ciberseguridad, infraestructura e innovación digital, impulsando la formación y actualización de toda la comunidad.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-	<footer class="container-fluid fondo-oscuro px-5 py-4">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 align-self-center text-center text-lg-start">
-							<img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI" class="logo-sena">
-						</div>
-						<div class="col-lg-8">
-							<div class="row">
-								<div class="col-12">
-									<p class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA 2026</strong> :: Ideas que compilan, talento que conecta</p>
+
+		<div class="container-fluid">
+			<div class="container my-5">
+				<div class="row g-4">
+
+					<!-- ==========================================
+                 TARJETA 1: SOFTWARE (Cian / Azul)
+                 ========================================== -->
+					<div class="col-12 col-md-6 col-xl-3" onclick="window.location.href='proyectos-software.html'">
+						<div
+							class="card-tematica card-border-cyan p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<div>
+								<!-- Encabezado de la tarjeta -->
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<span class="badge-pill-tech font-monospace text-cyan border-cyan">
+										&lt;dev/&gt; 24 Proyectos
+									</span>
+									<i class="fa-solid fa-code text-cyan opacity-75"></i>
 								</div>
-								<div class="col-12">
-									<p class="text-center text-lg-end copy"><strong>Desarrollo:</strong> Coordinación teleinformática</p>
+
+								<!-- Mini Bloque de Código -->
+								<div class="code-snippet-box p-2 rounded-3 mb-3 font-monospace small">
+									<div class="text-secondary mb-1" style="font-size: 0.65rem;">&lt;/&gt;
+										main:build</div>
+									<div
+										class="d-flex justify-content-between align-items-center bg-dark bg-opacity-75 p-2 rounded-2">
+										<span class="text-secondary text-truncate"
+											style="font-size: 0.72rem;">git checkout feat/software-ai</span>
+										<span
+											class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50"
+											style="font-size: 0.6rem;">200 OK</span>
+									</div>
+								</div>
+
+								<!-- Título y Descripción -->
+								<h3 class="fw-bold text-white fs-4 mb-2">Software</h3>
+								<div class="text-secondary small fw-medium text-cyan-light mb-3"
+									style="font-size: 0.75rem;">FullStack &amp; AI</div>
+								<p class="text-secondary small lh-base mb-4"
+									style="font-size: 0.75rem;">
+									La Feria CGMLTI 2026 presentará 24 proyectos destacados entre más de 80
+									desarrollos de aprendices SENA. Esta muestra exhibirá soluciones de
+									software con metodologías ágiles e inteligencia artificial para retos
+									reales, impulsando la innovación y la transformación digital.
+								</p>
+
+								<!-- Tecnologías / Insignias -->
+								<div class="d-flex flex-wrap gap-1 mb-4">
+									<span class="tech-tag">#React</span>
+									<span class="tech-tag">#Python</span>
+									<span class="tech-tag">#Microservices</span>
+									<span class="tech-tag">#CI/CD</span>
+								</div>
+							</div>
+
+							<!-- Botón Explorar con Direccionamiento -->
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace"
+								style="font-size: 0.72rem;">
+								<a href="proyectos-software.html"
+									class="text-cyan text-decoration-none fw-bold hover-glow d-flex align-items-center gap-1">
+									EXPLORAR MUESTRA <i class="fa-solid fa-arrow-right fs-6 ms-1"></i>
+								</a>
+								<span class="text-secondary opacity-50"
+									style="font-size: 0.65rem;">.v2.6.0-stable</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- ==========================================
+                 TARJETA 2: VIDEOJUEGOS (Ámbar / Amarillo)
+                 ========================================== -->
+					<div class="col-12 col-md-6 col-xl-3" onclick="window.location.href='proyectos-videoj.html'">
+						<div
+							class="card-tematica card-border-amber p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<div>
+								<!-- Encabezado de la tarjeta -->
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<span class="badge-pill-tech font-monospace text-amber border-amber">
+										Interactivos &amp; VR
+									</span>
+									<i class="fa-solid fa-gamepad text-amber opacity-75"></i>
+								</div>
+
+								<!-- Mini Bloque de Código -->
+								<div class="code-snippet-box p-2 rounded-3 mb-3 font-monospace small">
+									<div class="text-secondary mb-1" style="font-size: 0.65rem;">⚡
+										60fps:render</div>
+									<div
+										class="d-flex justify-content-between align-items-center bg-dark bg-opacity-75 p-2 rounded-2">
+										<span class="text-secondary text-truncate"
+											style="font-size: 0.72rem;">gameEngine.init({VR: true})</span>
+										<span
+											class="badge bg-warning bg-opacity-25 text-warning border border-warning border-opacity-50"
+											style="font-size: 0.6rem;">COMPILED</span>
+									</div>
+								</div>
+
+								<!-- Título y Descripción -->
+								<h3 class="fw-bold text-white fs-4 mb-2">Videojuegos</h3>
+								<div class="text-secondary small fw-medium text-amber-light mb-3"
+									style="font-size: 0.75rem;">GameDev / VR</div>
+								<p class="text-secondary small lh-base mb-4"
+									style="font-size: 0.75rem;">
+									La muestra de Desarrollo de Videojuegos CGMLTI 2026 exhibirá
+									experiencias digitales creadas por aprendices SENA. Esta exposición
+									reunirá juegos interactivos, narrativa y realidad virtual para
+									demostrar el talento, la innovación y el potencial creativo de la
+									industria.
+								</p>
+
+								<!-- Tecnologías / Insignias -->
+								<div class="d-flex flex-wrap gap-1 mb-4">
+									<span class="tech-tag">#Unity</span>
+									<span class="tech-tag">#UnrealEngine</span>
+									<span class="tech-tag">#Shaders</span>
+									<span class="tech-tag">#Blender3D</span>
+								</div>
+							</div>
+
+							<!-- Botón Explorar con Direccionamiento -->
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace"
+								style="font-size: 0.72rem;">
+								<a href="proyectos-videoj.html"
+									class="text-amber text-decoration-none fw-bold hover-glow d-flex align-items-center gap-1">
+									EXPLORAR MUESTRA <i class="fa-solid fa-arrow-right fs-6 ms-1"></i>
+								</a>
+								<span class="text-secondary opacity-50" style="font-size: 0.65rem;">GLSL
+									/ DX12</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- ==========================================
+                 TARJETA 3: INFRAESTRUCTURA (Púrpura / Violeta)
+                 ========================================== -->
+					<div class="col-12 col-md-6 col-xl-3" onclick="window.location.href='proyectos-infraestructura.html'">
+						<div
+							class="card-tematica card-border-purple p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<div>
+								<!-- Encabezado de la tarjeta -->
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<span class="badge-pill-tech font-monospace text-purple border-purple">
+										IoT &amp; Redes
+									</span>
+									<i class="fa-solid fa-server text-purple opacity-75"></i>
+								</div>
+
+								<!-- Mini Bloque de Código -->
+								<div class="code-snippet-box p-2 rounded-3 mb-3 font-monospace small">
+									<div class="text-secondary mb-1" style="font-size: 0.65rem;">🛡️
+										k8s:cluster</div>
+									<div
+										class="d-flex justify-content-between align-items-center bg-dark bg-opacity-75 p-2 rounded-2">
+										<span class="text-secondary text-truncate"
+											style="font-size: 0.72rem;">kubectl apply -f infra/sec.yaml</span>
+										<span
+											class="badge bg-purple-custom bg-opacity-25 text-purple border border-purple border-opacity-50"
+											style="font-size: 0.6rem;">RUNNING</span>
+									</div>
+								</div>
+
+								<!-- Título y Descripción -->
+								<h3 class="fw-bold text-white fs-4 mb-2">Infraestructura</h3>
+								<div class="text-secondary small fw-medium text-purple-light mb-3"
+									style="font-size: 0.75rem;">DevOps / Cloud</div>
+								<p class="text-secondary small lh-base mb-4"
+									style="font-size: 0.75rem;">
+									Esta muestra presentará proyectos de conectividad, ciberseguridad, IoT,
+									robótica y automatización desarrollados por aprendices SENA. Esta
+									exhibición mostrará su talento para diseñar soluciones tecnológicas
+									inteligentes y seguras orientadas a retos reales.
+								</p>
+
+								<!-- Tecnologías / Insignias -->
+								<div class="d-flex flex-wrap gap-1 mb-4">
+									<span class="tech-tag">#Docker</span>
+									<span class="tech-tag">#Kubernetes</span>
+									<span class="tech-tag">#Linux</span>
+									<span class="tech-tag">#CyberSec</span>
+								</div>
+							</div>
+
+							<!-- Botón Explorar con Direccionamiento -->
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace"
+								style="font-size: 0.72rem;">
+								<a href="proyectos-infraestructura.html"
+									class="text-purple text-decoration-none fw-bold hover-glow d-flex align-items-center gap-1">
+									EXPLORAR MUESTRA <i class="fa-solid fa-arrow-right fs-6 ms-1"></i>
+								</a>
+								<span class="text-secondary opacity-50"
+									style="font-size: 0.65rem;">uptime: 99.9%</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- ==========================================
+                 TARJETA 4: CONFERENCIAS (Blanco / Neutro)
+                 ========================================== -->
+					<div class="col-12 col-md-6 col-xl-3" onclick="window.location.href='teleinformatica-conf.html'">
+						<div
+							class="card-tematica card-border-white p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<div>
+								<!-- Encabezado de la tarjeta -->
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<span
+										class="badge-pill-tech font-monospace text-white border-white-custom">
+										Keynotes &amp; Tech
+									</span>
+									<i class="fa-solid fa-chalkboard-user text-white opacity-75"></i>
+								</div>
+
+								<!-- Mini Bloque de Código con Enlace Directo al Streaming -->
+								<div class="code-snippet-box p-2 rounded-3 mb-3 font-monospace small">
+									<div class="text-secondary mb-1" style="font-size: 0.65rem;">📡
+										live:stream</div>
+									<div
+										class="d-flex justify-content-between align-items-center bg-dark bg-opacity-75 p-2 rounded-2">
+										<a href="https://www.youtube.com/watch?v=qaNGodoRSz8" target="_blank"
+											rel="noopener noreferrer"
+											class="text-secondary text-truncate text-decoration-none hover-cyan"
+											style="font-size: 0.72rem;" title="Abrir Streaming en Vivo">
+											open https://stream.senacgmlti.dev
+										</a>
+										<span
+											class="badge bg-secondary bg-opacity-25 text-white border border-secondary border-opacity-50"
+											style="font-size: 0.6rem;">BROADCAST</span>
+									</div>
+								</div>
+
+								<!-- Título y Descripción -->
+								<h3 class="fw-bold text-white fs-4 mb-2">Conferencias</h3>
+								<div class="text-secondary small fw-medium text-white-50 mb-3"
+									style="font-size: 0.75rem;">Tech Talks</div>
+								<p class="text-secondary small lh-base mb-4"
+									style="font-size: 0.75rem;">
+									Las Conferencias de Teleinformática CGMLTI 2026 reunirán a expertos del
+									sector para compartir conocimientos clave. Este espacio ofrecerá
+									ponencias sobre redes, ciberseguridad, infraestructura e innovación
+									digital, impulsando la formación y actualización de toda la comunidad.
+								</p>
+
+								<!-- Tecnologías / Insignias -->
+								<div class="d-flex flex-wrap gap-1 mb-4">
+									<span class="tech-tag">#Keynotes</span>
+									<span class="tech-tag">#Telematics</span>
+									<span class="tech-tag">#OpenSource</span>
+									<span class="tech-tag">#AI_Summit</span>
+								</div>
+							</div>
+
+							<!-- Botón Explorar con Direccionamiento -->
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace"
+								style="font-size: 0.72rem;">
+								<a href="teleinformatica-conf.html"
+									class="text-white text-decoration-none fw-bold hover-glow d-flex align-items-center gap-1">
+									EXPLORAR MUESTRA <i class="fa-solid fa-arrow-right fs-6 ms-1"></i>
+								</a>
+								<span class="text-secondary opacity-50" style="font-size: 0.65rem;">PR:
+									merged</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="container-fluid fondo-oscuro px-5 py-4">
+			<div class="row">
+				<div class="col">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 align-self-center text-center text-lg-start">
+								<img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI"
+									class="logo-sena">
+							</div>
+							<div class="col-lg-8">
+								<div class="row">
+									<div class="col-12">
+										<p
+											class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA
+												2026</strong> :: Ideas que compilan, talento que conecta</p>
+									</div>
+									<div class="col-12">
+										<p class="text-center text-lg-end copy"><strong>Desarrollo:</strong>
+											Coordinación teleinformática</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/iconos.js"></script>
-</body>
+		</footer>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/iconos.js"></script>
+	</body>
 </html>

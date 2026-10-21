@@ -49,11 +49,11 @@ class HeaderComponent extends HTMLElement {
                                         </li>
                                     </ul>
 
-                                    <!-- Bloque derecho: SEMANA TÉCNICA y Badge -->
+                                    <!-- Bloque derecho: FERIA CONEXIA y Badge -->
                                     <ul class="navbar-nav mb-0 text-start text-lg-end ms-lg-auto align-items-lg-center mt-2 mt-lg-0">
                                         <li class="nav-item d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-1 bg-dark bg-opacity-25 px-2 py-1 rounded-2">
                                             <div>
-                                                <p class="mb-0 text-white fw-bold text-dev-label" style="font-size: 0.75rem;">SEMANA TÉCNICA</p>
+                                                <p class="mb-0 text-white fw-bold text-dev-label" style="font-size: 0.75rem;">FERIA CONEXIA</p>
                                                 <p class="mb-0 text-white fw-bold text-dev-label text-lumin-dev" style="font-size: 0.65rem;">26 al 30 OCTUBRE</p>
                                             </div>
                                             <span class="badge bg-item-dev text-uppercase" style="font-size: 0.55rem;">EVENTOS EN VIVO</span>
