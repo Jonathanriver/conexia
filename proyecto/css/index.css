@@ -448,6 +448,411 @@ body {
     }
 }
 
+.content-info {
+    margin-top: 5%;
+    background-color: #0a1121;
+    border: solid 1px #2c3748;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.content-image {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#logo-color {
+    height: 172px !important;
+}
+
+.badge-text-title-info {
+    background-color: #161a31;
+    border: solid 0.5px #2b186d;
+    color: #6b55b2;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-family: Inter;
+    font-size: 12px !important;
+}
+
+.title-ingo-centro {
+    color: white;
+    font-weight: bold;
+}
+
+.text-detail-info {
+    color: #94A3B8;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.resalta-text-info {
+    color: #06b6d4;
+    font-weight: bold;
+}
+
+.resalta-text-info-dos {
+    color: #7f5ed4;
+    font-weight: bold;
+}
+
+.resalta-text-info-tres {
+    color: #36D298;
+    font-weight: bold;
+}
+
+.text-section-title {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: InterSuper;
+}
+
+.objetivo-evento {
+    margin-bottom: 0px !important;
+    margin-top: 85px !important;
+}
+
+/* Estructura base de las tarjetas (Escritorio / Web) */
+.card-proposito {
+    background-color: #080d14;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left-width: 4px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-proposito:hover {
+    transform: translateY(-4px);
+}
+
+/* Estilo de la caja para el icono */
+.icon-box-proposito {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Variaciones de colores */
+.card-cyan {
+    border-left-color: #06b6d4 !important;
+    box-shadow: inset 10px 0 20px -10px rgba(6, 182, 212, 0.15);
+}
+
+.text-cyan {
+    color: #22d3ee !important;
+}
+
+.bg-cyan-subtle {
+    background-color: rgba(6, 182, 212, 0.12);
+}
+
+.card-purple {
+    border-left-color: #a855f7 !important;
+    box-shadow: inset 10px 0 20px -10px rgba(168, 85, 247, 0.15);
+}
+
+.text-purple {
+    color: #c084fc !important;
+}
+
+.bg-purple-subtle {
+    background-color: rgba(168, 85, 247, 0.12);
+}
+
+.card-amber {
+    border-left-color: #f59e0b !important;
+    box-shadow: inset 10px 0 20px -10px rgba(245, 158, 11, 0.15);
+}
+
+.text-amber {
+    color: #fbbf24 !important;
+}
+
+.bg-amber-subtle {
+    background-color: rgba(245, 158, 11, 0.12);
+}
+
+.card-emerald {
+    border-left-color: #10b981 !important;
+    box-shadow: inset 10px 0 20px -10px rgba(16, 185, 129, 0.15);
+}
+
+.text-emerald {
+    color: #34d399 !important;
+}
+
+.bg-emerald-subtle {
+    background-color: rgba(16, 185, 129, 0.12);
+}
+
+/* ========================================================
+       AJUSTES DE TEXTO MÁS PEQUEÑO EN MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .titulo-card-proposito {
+        font-size: 0.95rem !important;
+        /* Reduce sutilmente el título en móvil */
+        margin-bottom: 0.25rem !important;
+    }
+
+    .texto-card-proposito {
+        font-size: 0.75rem !important;
+        /* Texto más pequeño y compacto en móvil */
+        line-height: 1.35 !important;
+    }
+
+    .icon-box-proposito {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+    }
+
+    .icon-box-proposito i {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Estilos por defecto (Escritorio / Web) */
+.titulo-objetivos {
+    font-size: 3rem;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+.color-evento-titulo {
+    color: #a855f7;
+    /* Púrpura / Morado característico */
+}
+
+.subtitulo-objetivos {
+    font-size: 0.95rem;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .titulo-objetivos {
+        font-size: 2rem !important;
+        /* Reduce el tamaño del título principal en celular */
+        line-height: 1.2 !important;
+    }
+
+    .subtitulo-objetivos {
+        font-size: 0.75rem !important;
+        /* Reduce el tamaño del subtítulo para que se vea compacto */
+    }
+}
+
+/* Estructura general de la tarjeta (Escritorio / Web) */
+.card-invitacion {
+    background: linear-gradient(145deg, #090e17 0%, #04070c 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.08);
+}
+
+.titulo-invitacion {
+    letter-spacing: 1px;
+}
+
+.texto-invitacion {
+    max-width: 850px;
+    font-size: 0.95rem;
+}
+
+/* Colores personalizados */
+.text-cyan {
+    color: #06b6d4 !important;
+}
+
+.text-emerald {
+    color: #10b981 !important;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .card-invitacion {
+        padding: 1.5rem !important;
+        /* Reduce los márgenes internos en celular */
+    }
+
+    .titulo-invitacion {
+        font-size: 1.5rem !important;
+        /* Ajusta el título para pantallas pequeñas */
+        margin-bottom: 1rem !important;
+    }
+
+    .texto-invitacion {
+        font-size: 0.8rem !important;
+        /* Texto un poco más pequeño y legible en móvil */
+        line-height: 1.45 !important;
+    }
+}
+
+/* Estructura general de las tarjetas (Escritorio / Web) */
+.card-estadistica {
+    background: linear-gradient(145deg, #080d14 0%, #03060a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-estadistica:hover {
+    transform: translateY(-5px);
+}
+
+/* Caja para los iconos */
+.icon-box-stat {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-stat {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    color: #94a3b8;
+}
+
+.value-stat {
+    letter-spacing: 1px;
+}
+
+/* Variaciones de colores temáticos */
+.stat-purple .icon-box-stat {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
+    border-color: rgba(168, 85, 247, 0.3);
+}
+
+.text-purple {
+    color: #a855f7 !important;
+}
+
+.stat-cyan .icon-box-stat {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+    border-color: rgba(6, 182, 212, 0.3);
+}
+
+.text-cyan {
+    color: #06b6d4 !important;
+}
+
+.stat-emerald .icon-box-stat {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.text-emerald {
+    color: #10b981 !important;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .card-estadistica {
+        padding: 1.25rem !important;
+        /* Reduce los márgenes internos en celular */
+    }
+
+    .value-stat {
+        font-size: 2.25rem !important;
+        /* Ajusta el tamaño de los números para que se vean proporcionados */
+    }
+
+    .icon-box-stat {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Estructura principal del Marco */
+.card-countdown {
+    background: linear-gradient(145deg, #090e17 0%, #03060a 100%);
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.1) !important;
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+/* Cajitas de los números */
+.box-timer {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-width: 110px;
+    max-width: 160px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.box-timer:hover {
+    border-color: rgba(6, 182, 212, 0.4);
+    transform: translateY(-3px);
+}
+
+.number-timer {
+    line-height: 1;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.label-timer {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+}
+
+.text-cyan {
+    color: #06b6d4 !important;
+}
+
+.border-cyan {
+    border-color: #06b6d4 !important;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .card-countdown {
+        padding: 1.5rem 1rem !important;
+        /* Reduce padding interno */
+    }
+
+    .titulo-countdown {
+        font-size: 1.25rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .box-timer {
+        min-width: 70px !important;
+        /* Permite que las 4 cajitas quepan en fila en móviles */
+        padding: 0.75rem 0.25rem !important;
+    }
+
+    .number-timer {
+        font-size: 1.75rem !important;
+        /* Reduce los números para encajar en pantallas reducidas */
+    }
+
+    .label-timer {
+        font-size: 0.58rem !important;
+        letter-spacing: 0.8px;
+    }
+}
+
 @font-face {
     font-family: 'Inter';
     font-style: normal;
