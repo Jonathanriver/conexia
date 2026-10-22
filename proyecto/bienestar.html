@@ -1,147 +1,533 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI - SENA</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-	<header class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 d-flex justify-content-center justify-content-lg-start align-items-center pt-4 pb-3 text-white">
-							<a href="index.html" class="text-white text-decoration-none">
-								<div id="logo"></div>
-							</a>
-						</div>
-						<div class="col-lg-8 d-lg-flex justify-content-lg-end align-items-center pb-3 pb-lg-0">
-							<!-- Inicio Navbar -->
-							<nav class="navbar navbar-expand-lg p-0">
-								<div class="container-fluid pe-0">
-									<a class="navbar-brand d-lg-none" href="#">Menú</a>
-									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-										<i class="fa-solid fa-bars"></i>
-									</button>
-									<div class="collapse navbar-collapse claro" id="navbarBasic">
-										<ul class="navbar-nav ms-auto mb-0 mb-xl-0 text-center">
-											<li class="nav-item mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-											</li>
-											<li class="nav-item dropdown mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-													Coordinaciones
-												</a>
-												<ul class="dropdown-menu">
-													<li><a class="dropdown-item" href="teleinformatica.html">Teleinformática</a></li>
-													<li><a class="dropdown-item" href="industrias-c.html">Ind. Creativas</a></li>
-													<li><a class="dropdown-item" href="mercadeo.html">Mercadeo</a></li>
-													<li><a class="dropdown-item" href="logistica.html">Logística</a></li>
-													<li><a class="dropdown-item" href="bilinguismo.html">Bilingüismo</a></li>
-													<li><a class="dropdown-item" href="bienestar.html">Bienestar al aprendiz</a></li>
-												</ul>
-											</li>
-											
-										</ul>
-									</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de
+			Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI -
+			SENA</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/bienestar.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+			integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+		<script src="./js/componentes/header.js" defer></script>
+	</head>
+	<body style="background-color: white; ">
+		<header-component></header-component>
+
+		<main class="container">
+			<div class="row mb-md-3">
+				<div class="col-md-4 col-lg-3">
+					<div id="logo-color" class="img-fluid mb-2"></div>
+				</div>
+
+				<div
+					class="col-md pt-2 pt-md-0 d-md-flex align-items-end justify-content-end">
+					<h3 class="text-center pt-3 mb-md-0"><i
+							class="fa-solid fa-hand-holding-hand"></i> Bienestar al aprendiz</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<!-- Fila 1 -->
+					<figure>
+						<h3 class="badge">Bienstar al aprendiz</h3>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#502"><i
+								class="fa-solid fa-route"></i></a>
+						<h4><span class="me-2"><i
+									class="fa-solid fa-hand-holding-hand"></i></span>¡BAJALE AL CAOS,
+							SÚBELE A LA VIDA!</h4>
+						<p>Un espacio para explorar tus emociones, comprender el estrés, la
+							ansiedad y el duelo, y descubrir herramientas para afrontar los momentos
+							difíciles. <br>
+							Secretaria de la mujer
+						</p>
+						<h6>27 de octubre | 9:30 am - 1:30 pm</h6>
+					</figure>
+					<div class="modal" tabindex="-1" id="502">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modalBasicLabel">Piso 5 - Frente oficina
+										502</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
 								</div>
-							</nav>
-							<!-- Fin Navbar -->
+								<div class="modal-body">
+									<img src="img/502.jpg" alt class="img-fluid">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<figure>
+						<h3 class="badge">Piso 2</h3>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#piso2"><i
+								class="fa-solid fa-route"></i></a>
+						<h4><span class="me-2"><i
+									class="fa-solid fa-hand-holding-hand"></i></span>¡NO ES TIEMPO PERDIDO,
+							ES TIEMPO VIVIDO! </h4>
+						<p>Descubre cómo transformar tu tiempo libre en experiencias que te
+							diviertan, te conecten con los demás y te permitan disfrutar la vida
+							fuera de la rutina.</p>
+						<h6>27 de octubre | 9:00 am - 12:00 m</h6>
+					</figure>
+					<div class="modal" tabindex="-1" id="piso2">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modalBasicLabel">Piso 2 - Frente
+										cafetería</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<img src="img/piso2.jpg" alt class="img-fluid">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</header>
+				<!-- ==========================================
+             BLOQUE 1: MARTES 27 DE OCTUBRE // PLAZOLETA EXTERNA
+             ========================================== -->
+				<div
+					class="date-header-banner mb-3 font-monospace fw-bold text-dark bg-amber px-3 py-1 rounded-1 text-uppercase">
+					MARTES 27 DE OCTUBRE // PLAZOLETA EXTERNA
+				</div>
 
-	<main class="container">
-    <div class="row mb-md-3">
-			<div class="col-md-4 col-lg-3">
-				<div id="logo-color" class="img-fluid mb-2"></div>
-			</div>
-      
-      <div class="col-md pt-2 pt-md-0 d-md-flex align-items-end justify-content-end">
-        <h3 class="text-center pt-3 mb-md-0"><i class="fa-solid fa-hand-holding-hand"></i> Bienestar al aprendiz</h3>
-      </div>
-    </div>
-      <div class="row">
-        <div class="col">
-          <!-- Fila 1 -->
-          <figure>
-            <h3 class="badge">Bienstar al aprendiz</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#502"><i class="fa-solid fa-route"></i></a>
-            <h4><span class="me-2"><i class="fa-solid fa-hand-holding-hand"></i></span>¡BAJALE AL CAOS, SÚBELE A LA VIDA!</h4>
-            <p>Un espacio para explorar tus emociones, comprender el estrés, la ansiedad y el duelo, y descubrir herramientas para afrontar los momentos difíciles. <br>
-            Secretaria de la mujer
-            </p>
-            <h6>27 de octubre | 9:30 am - 1:30 pm</h6>
-          </figure>
-          <div class="modal" tabindex="-1" id="502">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Frente oficina 502</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="img/502.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
+				<!-- Tarjetas Martes 27 -->
+				<div class="d-flex flex-column gap-3 mb-5">
 
-          <figure>
-            <h3 class="badge">Piso 2</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#piso2"><i class="fa-solid fa-route"></i></a>
-            <h4><span class="me-2"><i class="fa-solid fa-hand-holding-hand"></i></span>¡NO ES TIEMPO PERDIDO, ES TIEMPO VIVIDO! </h4>
-            <p>Descubre cómo transformar tu tiempo libre en experiencias que te diviertan, te conecten con los demás y te permitan disfrutar la vida fuera de la rutina.</p>
-            <h6>27 de octubre | 9:00 am - 12:00 m</h6>
-          </figure>
-          <div class="modal" tabindex="-1" id="piso2">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Frente cafetería</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="img/piso2.jpg" alt="" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-	</main>
-	<footer class="container-fluid fondo-oscuro px-5 py-4">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 align-self-center text-center text-lg-start">
-							<img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI" class="logo-sena">
+					<!-- Actividad 1: IDRD -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								ACTIVIDAD FÍSICA Y RECREACIÓN
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
 						</div>
-						<div class="col-lg-8">
-							<div class="row">
-								<div class="col-12">
-									<p class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA 2026</strong> :: Ideas que compilan, talento que conecta</p>
-								</div>
-								<div class="col-12">
-									<p class="text-center text-lg-end copy"><strong>Desarrollo:</strong> Coordinación teleinformática</p>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-dumbbell text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡ACTIVIDAD
+								DIRIGIDA POR IDRD!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Sesión de activación y acondicionamiento guiada por instructores del
+								IDRD.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							27 de octubre | 9:00 am - 10:30 am
+						</div>
+					</div>
+
+					<!-- Actividad 2: Batalla de Reyes -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								ZONA LÚDICA
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-chess text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡BATALLA DE
+								REYES!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Juego de ajedrez gigante. Estrategia, concentración y competencia
+								abierta para aprendices.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							27 de octubre | Jornada Continua
+						</div>
+					</div>
+
+					<!-- Actividad 3: Torre al Límite -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								DESTREZA Y EQUILIBRIO
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-cubes text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡TORRE AL
+								LÍMITE!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Jenga gigante. Pon a prueba tu pulso y trabajo en equipo para mantener
+								la torre en pie.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							27 de octubre | Plazoleta Principal
+						</div>
+					</div>
+
+					<!-- Actividad 4: Puntería Explosiva -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								DEPORTE TRADICIONAL
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-bullseye text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡PUNTERÍA
+								EXPLOSIVA!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Canchas de mini tejo. Precisión, integración y tradición colombiana.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							27 de octubre | Zona Canchas
+						</div>
+					</div>
+
+					<!-- Actividad 5: Reto Power Squat -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								RETO FITNESS
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-bolt text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡RETO POWER
+								SQUAT!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Reto de sentadillas y resistencia física. Demuestra tu fuerza y supera
+								la marca.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							27 de octubre | Premios al mejor récord
+						</div>
+					</div>
+
+				</div>
+
+				<!-- ==========================================
+             BLOQUE 2: MIÉRCOLES 28 DE OCTUBRE
+             ========================================== -->
+				<div
+					class="date-header-banner mb-3 font-monospace fw-bold text-dark bg-amber px-3 py-1 rounded-1 text-uppercase">
+					MIÉRCOLES 28 DE OCTUBRE
+				</div>
+
+				<!-- Tarjetas Miércoles 28 -->
+				<div class="d-flex flex-column gap-3 mb-5">
+
+					<!-- Actividad: Emisora La Kalle -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								MÚSICA Y TRANSMISIÓN
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-radio text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡EMISORA
+								CONFIRMADA: LA KALLE!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Transmisión especial en vivo, música, dinámicas y animación para toda la
+								comunidad SENA.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							28 de octubre | 10:00 am - 12:00 pm
+						</div>
+					</div>
+
+					<!-- Actividad: Maquillaje Artístico -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								ARTE Y EXPRESIÓN
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-palette text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡TALLER DE
+								MAQUILLAJE ARTÍSTICO!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Aprende técnicas creativas de caracterización y maquillaje de la mano de
+								expertos.
+							</p>
+							<p class="text-muted font-monospace small mb-2" style="font-family: inter !important; color: black !important;">
+								Lugar: Terraza segundo piso
+							</p>
+
+							<!-- Horarios Disponibles -->
+							<div
+								class="p-3 bg-light rounded-3 font-monospace text-purple-dark small">
+								<div class="fw-bold text-uppercase mb-1"
+									style="font-size: 0.75rem;">HORARIOS DISPONIBLES (3 JORNADAS):</div>
+								<div>&bull; Mañana: 9:00 am - 12:00 pm</div>
+								<div>&bull; Tarde: 1:00 pm - 3:00 pm</div>
+								<div>&bull; Noche: 6:00 pm - 8:00 pm</div>
+							</div>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							28 de octubre | Terraza Segundo Piso
+						</div>
+					</div>
+
+				</div>
+
+				<!-- ==========================================
+             BLOQUE 3: JUEVES 29 DE OCTUBRE // PLAZOLETA EXTERNA
+             ========================================== -->
+				<div
+					class="date-header-banner mb-3 font-monospace fw-bold text-dark bg-amber px-3 py-1 rounded-1 text-uppercase">
+					JUEVES 29 DE OCTUBRE // PLAZOLETA EXTERNA
+				</div>
+
+				<!-- Tarjetas Jueves 29 -->
+				<div class="d-flex flex-column gap-3 mb-4">
+
+					<!-- Actividad 1: IDRD Jueves -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								ACTIVIDAD FÍSICA
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-person-running text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡ACTIVIDAD
+								DIRIGIDA POR IDRD!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Jornada vespertina de movimiento, pausa activa y recreación dirigida.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							29 de octubre | 1:00 pm - 2:30 pm
+						</div>
+					</div>
+
+					<!-- Actividad 2: Batalla de Reyes Jueves -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								ZONA LÚDICA // JUEVES
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-chess-king text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡BATALLA DE
+								REYES!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Juego de ajedrez gigante. Reta a tus compañeros y pon a prueba tu
+								pensamiento táctico.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							29 de octubre | Jornada Completa
+						</div>
+					</div>
+
+					<!-- Actividad 3: Torre al Límite Jueves -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								DESTREZA Y EQUILIBRIO
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-cubes text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡TORRE AL
+								LÍMITE!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Jenga gigante. Concentración máxima en cada movimiento en un ambiente de
+								sana convivencia.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							29 de octubre | Plazoleta Principal
+						</div>
+					</div>
+
+					<!-- Actividad 4: Puntería Explosiva Jueves -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								DEPORTE TRADICIONAL
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-bullseye text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡PUNTERÍA
+								EXPLOSIVA!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-secondary font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Canchas de mini tejo. Precisión, integración y tradición colombiana.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							29 de octubre | Zona Canchas
+						</div>
+					</div>
+
+					<!-- Actividad 5: Reto Power Squat Jueves -->
+					<div
+						class="card-bienestar-clear p-3 p-md-4 rounded-4 bg-white border border-secondary border-opacity-25 shadow-sm position-relative">
+						<div class="d-flex justify-content-between align-items-start mb-2">
+							<span
+								class="badge-tag-yellow font-monospace fw-bold px-2 py-05 text-dark rounded-1 text-uppercase">
+								RETO FITNESS
+							</span>
+							<!-- <i class="fa-solid fa-link text-purple-neon fs-5"></i> -->
+						</div>
+						<div class="d-flex align-items-center gap-2 mb-2">
+							<i class="fa-solid fa-dumbbell text-purple-neon"></i>
+							<h4 class="fw-bold text-dark font-monospace mb-0 fs-5">¡RETO POWER
+								SQUAT!</h4>
+						</div>
+						<div
+							class="ps-3 border-start border-2 border-secondary border-opacity-50 my-2">
+							<p class="text-dark font-monospace small mb-1" style="font-family: inter !important; color: black !important;">
+								Reto de sentadillas y fuerza. Exígete al límite y compite con la
+								comunidad de aprendices.
+							</p>
+							<p class="text-muted font-monospace small mb-0" style="font-family: inter !important; color: black !important;">
+								Plazoleta externa, frente a atención al ciudadano
+							</p>
+						</div>
+						<div class="font-monospace text-secondary small mt-3" style="font-family: inter !important; color: black !important;">
+							29 de octubre | Zona Fitness
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</main>
+		<footer class="container-fluid fondo-oscuro px-5 py-4">
+			<div class="row">
+				<div class="col">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 align-self-center text-center text-lg-start">
+								<img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI"
+									class="logo-sena">
+							</div>
+							<div class="col-lg-8">
+								<div class="row">
+									<div class="col-12">
+										<p
+											class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA
+												2026</strong> :: Ideas que compilan, talento que conecta</p>
+									</div>
+									<div class="col-12">
+										<p class="text-center text-lg-end copy"><strong>Desarrollo:</strong>
+											Coordinación teleinformática</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/iconos.js"></script>
-</body>
+		</footer>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/iconos.js"></script>
+	</body>
 </html>

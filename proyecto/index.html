@@ -680,6 +680,91 @@
 		<script src="js/iconos.js"></script>
 	</body>
 </html>
+
+<!-- ==========================================
+     WIDGET FLOTANTE: TRANSMISIÓN EN VIVO LA KALLE
+     ========================================== -->
+<div id="stickyLakalleWidget"
+	class="lakalle-floating-widget position-fixed bottom-0 end-0 m-3 z-3">
+
+	<!-- Contenedor Principal del Widget -->
+	<div
+		class="card-lakalle-floating rounded-4 p-3 shadow-lg border border-purple-neon position-relative overflow-hidden">
+
+		<!-- Glow Neón de Fondo -->
+		<div class="lakalle-glow-bg"></div>
+
+		<div
+			class="d-flex align-items-center justify-content-between gap-3 position-relative z-1">
+
+			<!-- Izquierda: Icono + Información de la Emisora -->
+			<div class="d-flex align-items-center gap-3">
+
+				<!-- Radio Icon Box con Pulso Neón -->
+				<div
+					class="lakalle-icon-box rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+					<i class="fa-solid fa-radio text-purple-bright fs-5"></i>
+					<span class="pulse-ring"></span>
+				</div>
+
+				<!-- Detalle del Evento -->
+				<div class="font-monospace">
+					<div class="d-flex align-items-center gap-2 mb-1">
+						<span
+							class="badge-live-red px-2 py-05 rounded-pill fw-bold text-uppercase d-flex align-items-center gap-1">
+							<span class="dot-live-blink"></span> EN VIVO
+						</span>
+						<span class="badge-date-yellow px-2 py-05 rounded text-dark fw-bold">
+							28 OCT
+						</span>
+					</div>
+
+					<h6 class="fw-bold text-light mb-0 font-sans lh-sm">
+						Emisora <span class="text-amber">La Kalle 96.9 FM</span>
+					</h6>
+
+					<p class="text-secondary small mb-0 d-none d-sm-block"
+						style="font-size: 0.72rem;">
+						Transmisión especial en vivo desde la Plazoleta Externa
+					</p>
+				</div>
+
+			</div>
+
+			<!-- Derecha: Botón de Acción y Cierre/Minimizar -->
+			<div class="d-flex align-items-center gap-2">
+
+				<!-- Botón Escuchar / Ver
+				<a href="#emisora-lakalle"
+					class="btn btn-lakalle-action font-monospace fw-bold px-3 py-15 rounded-3 d-flex align-items-center gap-1 text-dark">
+					<span>SINTONIZAR</span>
+					<i class="fa-solid fa-circle-play"></i>
+				</a> -->
+
+				<!-- Botón Minimizar -->
+				<button type="button"
+					class="btn-close-widget text-secondary p-1 border-0 bg-transparent ms-1"
+					onclick="toggleWidget()" title="Minimizar">
+					<i class="fa-solid fa-chevron-down" id="widgetToggleIcon"></i>
+				</button>
+
+			</div>
+
+		</div>
+
+		<!-- Contenido Expandido Extra (Opcional en Clic) -->
+		<div id="widgetExtraDetails"
+			class="mt-2 pt-2 border-top border-secondary border-opacity-25 font-monospace text-secondary small d-none">
+			<div class="d-flex justify-content-between align-items-center">
+				<span><i class="fa-regular fa-clock text-cyan me-1"></i> 10:00 am - 12:00
+					pm</span>
+				<span class="text-emerald"><i class="fa-solid fa-location-dot me-1"></i>
+					CGMLTI Plazoleta</span>
+			</div>
+		</div>
+
+	</div>
+</div>	
 <script>
     let player;
     let isMuted = true;
@@ -845,4 +930,19 @@
     // Actualiza el contador cada segundo
     setInterval(updateCountdown, 1000);
     updateCountdown();
+
+	function toggleWidget() {
+        const extraDetails = document.getElementById('widgetExtraDetails');
+        const icon = document.getElementById('widgetToggleIcon');
+        
+        if (extraDetails.classList.contains('d-none')) {
+            extraDetails.classList.remove('d-none');
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');
+        } else {
+            extraDetails.classList.add('d-none');
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
+        }
+    }
 </script>

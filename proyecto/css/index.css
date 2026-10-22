@@ -870,3 +870,170 @@ body {
     font-display: swap;
     src: url('../fuentes/Inter-VariableFont_opsz\,wght.ttf') format('woff2');
 }
+
+/* Ubicación y dimensiones del Widget */
+.lakalle-floating-widget {
+    max-width: 420px;
+    width: calc(100% - 2rem);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Caja Oscura Cyberpunk */
+.card-lakalle-floating {
+    background: rgba(8, 15, 30, 0.82);
+    border: 1px solid rgba(168, 85, 247, 0.4) !important;
+    backdrop-filter: blur(12px);
+}
+
+/* Resplandor Morado Neón */
+.lakalle-glow-bg {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+/* Icon Box con Animación de Pulso */
+.lakalle-icon-box {
+    width: 44px;
+    height: 44px;
+    background: rgba(168, 85, 247, 0.15);
+    border: 1px solid rgba(168, 85, 247, 0.5);
+    position: relative;
+}
+
+.pulse-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #c084fc;
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Indicador Parpadeante EN VIVO */
+.badge-live-red {
+    background-color: #dc2626;
+    color: #ffffff;
+    font-size: 0.62rem;
+    letter-spacing: 0.5px;
+}
+
+.dot-live-blink {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Badge Fecha */
+.badge-date-yellow {
+    background-color: #facc15;
+    font-size: 0.62rem;
+}
+
+/* Botón Sintonizar */
+.btn-lakalle-action {
+    background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%);
+    color: #ffffff !important;
+    font-size: 0.72rem;
+    letter-spacing: 0.5px;
+    border: none;
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
+    transition: all 0.2s ease;
+}
+
+.btn-lakalle-action:hover {
+    background: linear-gradient(135deg, #c084fc 0%, #9333ea 100%);
+    box-shadow: 0 0 18px rgba(192, 132, 252, 0.7);
+    transform: scale(1.03);
+}
+
+/* Botón Minimizar */
+.btn-close-widget {
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+
+.btn-close-widget:hover {
+    color: #ffffff;
+}
+
+/* Colores Neón */
+.text-purple-bright {
+    color: #c084fc !important;
+}
+
+.text-amber {
+    color: #fbbf24 !important;
+}
+
+.text-cyan {
+    color: #22d3ee !important;
+}
+
+.text-emerald {
+    color: #34d399 !important;
+}
+
+.py-05 {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+
+.font-sans {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .lakalle-floating-widget {
+        bottom: 10px !important;
+        end: 10px !important;
+        margin: 0 10px !important;
+        width: calc(100% - 20px) !important;
+    }
+
+    .card-lakalle-floating {
+        padding: 0.75rem 1rem !important;
+    }
+
+    .lakalle-icon-box {
+        width: 38px;
+        height: 38px;
+    }
+
+    .btn-lakalle-action {
+        font-size: 0.68rem !important;
+        padding: 0.35rem 0.6rem !important;
+    }
+}

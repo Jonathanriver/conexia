@@ -1,0 +1,71 @@
+/* Fondo Blanco / Claro de la Sección */
+.bienestar-wrapper {
+    background-color: #fafafa;
+}
+
+/* Título Morado */
+.text-purple-neon {
+    color: #7e22ce !important;
+}
+
+.text-purple-dark {
+    color: #6b21a8 !important;
+}
+
+/* Tag Amarillo Superior de Fecha */
+.date-header-banner {
+    background-color: #facc15;
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* Badges de Categoría */
+.badge-tag-yellow {
+    background-color: #fde047;
+    font-size: 0.68rem;
+    letter-spacing: 0.5px;
+}
+
+/* Tarjetas Claras con Borde Suave */
+.card-bienestar-clear {
+    background-color: #ffffff !important;
+    border: 2px solid gray !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-bienestar-clear:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(126, 34, 206, 0.08) !important;
+    border-color: rgba(126, 34, 206, 0.3) !important;
+}
+
+/* Logo CGMLTI Icon */
+.cgmlti-logo-icon {
+    width: 42px;
+    height: 42px;
+}
+
+.py-05 {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .date-header-banner {
+        font-size: 0.72rem !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-bienestar-clear h4 {
+        font-size: 1rem !important;
+    }
+
+    .badge-tag-yellow {
+        font-size: 0.62rem !important;
+    }
+}
