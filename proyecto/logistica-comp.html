@@ -1,93 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI - SENA</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-	<header class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 d-flex justify-content-center justify-content-lg-start align-items-center pt-4 pb-3 text-white">
-							<a href="index.html" class="text-white text-decoration-none">
-								<div id="logo"></div>
-							</a>
-						</div>
-						<div class="col-lg-8 d-lg-flex justify-content-lg-end align-items-center pb-3 pb-lg-0">
-							<!-- Inicio Navbar -->
-							<nav class="navbar navbar-expand-lg p-0">
-								<div class="container-fluid pe-0">
-									<a class="navbar-brand d-lg-none" href="#">Menú</a>
-									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-										<i class="fa-solid fa-bars"></i>
-									</button>
-									<div class="collapse navbar-collapse claro" id="navbarBasic">
-										<ul class="navbar-nav ms-auto mb-0 mb-xl-0 text-center">
-											<li class="nav-item mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-											</li>
-											<li class="nav-item dropdown mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-													Coordinaciones
-												</a>
-												<ul class="dropdown-menu">
-													<li><a class="dropdown-item" href="teleinformatica.html">Teleinformática</a></li>
-													<li><a class="dropdown-item" href="industrias-c.html">Ind. Creativas</a></li>
-													<li><a class="dropdown-item" href="mercadeo.html">Mercadeo</a></li>
-													<li><a class="dropdown-item" href="logistica.html">Logística</a></li>
-													<li><a class="dropdown-item" href="bilinguismo.html">Bilingüismo</a></li>
-													<li><a class="dropdown-item" href="bienestar.html">Bienestar al aprendiz</a></li>
-												</ul>
-											</li>
-											
-										</ul>
-									</div>
-								</div>
-							</nav>
-							<!-- Fin Navbar -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de
+      Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI -
+      SENA</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./js/componentes/header.js" defer></script>
+  </head>
+  <body style="background-color: #f8f9fa;">
+    <header-component></header-component>
 
-	<main class="container">
-    <div class="row mb-md-3">
-			<div class="col-md-4 col-lg-3 mt-3">
-				<img src="img/logo-logistica.jpg" class="img-fluid" alt="Logotipo Logística">
-			</div>
-      
-      <div class="col-md pt-2 pt-md-0 d-md-flex align-items-end justify-content-end">
-        <h3 class="text-center pt-3 mb-md-0"><i class="fa-solid fa-truck-fast"></i> Logística</h3>
+    <main class="container">
+      <div class="row mb-md-3">
+        <div class="col-md-4 col-lg-3 mt-3">
+          <img src="img/logo-logistica.jpg" class="img-fluid"
+            alt="Logotipo Logística">
+        </div>
+
+        <div
+          class="col-md pt-2 pt-md-0 d-md-flex align-items-end justify-content-end">
+          <h3 class="text-center pt-3 mb-md-0"><i
+              class="fa-solid fa-truck-fast"></i> Logística</h3>
+        </div>
       </div>
-    </div>
       <div class="row">
         <div class="col">
           <!-- Fila 1 -->
           <figure>
             <h3 class="badge">Ambiente 309</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#309"><i class="fa-solid fa-route"></i></a>
-            <h4><span class="me-2"><i class="fa-solid fa-truck-fast"></i></span>Gran Prix (arduino)</h4>
-            <p>Aplicar tecnologías de automatización en transporte logístico y comprender cómo la automatización y la robótica apoyan los procesos de transporte y distribución.</p>
-            <h6>27 de octubre 10:00 am - 12:00 m y 2:00 pm - 4:00 pm | 28 de octubre 2:00 pm - 4:00 pm y 6:00 pm - 9:00 pm</h6>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#309"><i
+                class="fa-solid fa-route"></i></a>
+            <h4><span class="me-2"><i
+                  class="fa-solid fa-truck-fast"></i></span>Gran Prix
+              (arduino)</h4>
+            <p>Aplicar tecnologías de automatización en transporte logístico y
+              comprender cómo la automatización y la robótica apoyan los
+              procesos de transporte y distribución.</p>
+            <h6>27 de octubre 10:00 am - 12:00 m y 2:00 pm - 4:00 pm | 28 de
+              octubre 2:00 pm - 4:00 pm y 6:00 pm - 9:00 pm</h6>
           </figure>
           <div class="modal" tabindex="-1" id="309">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="modalBasicLabel">Piso 3 - Ambiente 309</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h5 class="modal-title" id="modalBasicLabel">Piso 3 - Ambiente
+                    309</h5>
+                  <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <img src="img/309.jpg" alt="" class="img-fluid">
+                  <img src="img/309.jpg" alt class="img-fluid">
                 </div>
               </div>
             </div>
@@ -96,20 +67,28 @@
           <!-- Fila 2 -->
           <figure>
             <h3 class="badge">Ambiente 305</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#305"><i class="fa-solid fa-route"></i></a>
-            <h4><span class="me-2"><i class="fa-solid fa-truck-fast"></i></span>Game suply chain</h4>
-            <p>Construyendo la cadena de suministro: Representar el flujo logístico desde proveedores hasta clientes. Evidenciar el efecto látigo (Bullwhip Effect).</p>
-            <h6>27 de octubre 1:00 pm - 3:00 pm | 28 de octubre 8:00 am - 10:00 am / 1:00 pm - 3:00 pm | 29 de octubre 1:00 pm - 3:00 pm</h6>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#305"><i
+                class="fa-solid fa-route"></i></a>
+            <h4><span class="me-2"><i
+                  class="fa-solid fa-truck-fast"></i></span>Game suply
+              chain</h4>
+            <p>Construyendo la cadena de suministro: Representar el flujo
+              logístico desde proveedores hasta clientes. Evidenciar el efecto
+              látigo (Bullwhip Effect).</p>
+            <h6>27 de octubre 1:00 pm - 3:00 pm | 28 de octubre 8:00 am - 10:00
+              am / 1:00 pm - 3:00 pm | 29 de octubre 1:00 pm - 3:00 pm</h6>
           </figure>
           <div class="modal" tabindex="-1" id="305">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="modalBasicLabel">Piso 3 - Ambiente 305</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h5 class="modal-title" id="modalBasicLabel">Piso 3 - Ambiente
+                    305</h5>
+                  <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <img src="img/305.jpg" alt="" class="img-fluid">
+                  <img src="img/305.jpg" alt class="img-fluid">
                 </div>
               </div>
             </div>
@@ -118,10 +97,15 @@
           <!-- Fila 3 -->
           <figure>
             <h3 class="badge">CEDI (Piso -1)</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#auditorio"><i class="fa-solid fa-route"></i></a>
-            <h4><span class="me-2"><i class="fa-solid fa-truck-fast"></i></span>Inspector logística y balanza maxter</h4>
-            <p>Simulación de Cross Docking - "24 Horas para Despachar": Comprender los procesos de transporte interno.</p>
-            <h6>28 y 29 de octubre 8:00 am - 11:00 am | 2:00 pm - 5:00 pm | 6:00 pm - 8:00 pm</h6>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#auditorio"><i
+                class="fa-solid fa-route"></i></a>
+            <h4><span class="me-2"><i
+                  class="fa-solid fa-truck-fast"></i></span>Inspector logística
+              y balanza maxter</h4>
+            <p>Simulación de Cross Docking - "24 Horas para Despachar":
+              Comprender los procesos de transporte interno.</p>
+            <h6>28 y 29 de octubre 8:00 am - 11:00 am | 2:00 pm - 5:00 pm | 6:00
+              pm - 8:00 pm</h6>
           </figure>
           <!-- <div class="modal" tabindex="-1" id="CEDI">
             <div class="modal-dialog modal-dialog-centered">
@@ -140,20 +124,29 @@
           <!-- Fila 4 -->
           <figure>
             <h3 class="badge">Ambiente 308</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#308"><i class="fa-solid fa-route"></i></a>
-            <h4><span class="me-2"><i class="fa-solid fa-truck-fast"></i></span>Hackathon</h4>
-            <p>Estructurar el diseño del layout y el sloting de la bodega, de forma que posteriormente se pueda definir el ruteo eficiente del vehículo automatizado y la lógica de manipulación según la disposición del inventario; por su parte, los aprendices de software deberán codificar y transmitir las órdenes de preparación desde el sistema de control hacia la placa Arduino.</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#308"><i
+                class="fa-solid fa-route"></i></a>
+            <h4><span class="me-2"><i
+                  class="fa-solid fa-truck-fast"></i></span>Hackathon</h4>
+            <p>Estructurar el diseño del layout y el sloting de la bodega, de
+              forma que posteriormente se pueda definir el ruteo eficiente del
+              vehículo automatizado y la lógica de manipulación según la
+              disposición del inventario; por su parte, los aprendices de
+              software deberán codificar y transmitir las órdenes de preparación
+              desde el sistema de control hacia la placa Arduino.</p>
             <h6>27 y 28 de octubre 8:00 am - 3:00 pm</h6>
           </figure>
           <div class="modal" tabindex="-1" id="308">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="modalBasicLabel">Piso 3 - Ambiente 308</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h5 class="modal-title" id="modalBasicLabel">Piso 3 - Ambiente
+                    308</h5>
+                  <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <img src="img/308.jpg" alt="" class="img-fluid">
+                  <img src="img/308.jpg" alt class="img-fluid">
                 </div>
               </div>
             </div>
@@ -162,20 +155,30 @@
           <!-- Fila 5 -->
           <figure>
             <h3 class="badge">Enfrente del ambiente 305</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#305"><i class="fa-solid fa-route"></i></a>
-            <h4><span class="me-2"><i class="fa-solid fa-truck-fast"></i></span>Premiación Hackathon</h4>
-            <p>Estructurar el diseño del layout y el sloting de la bodega, de forma que posteriormente se pueda definir el ruteo eficiente del vehículo automatizado y la lógica de manipulación según la disposición del inventario; por su parte, los aprendices de software deberán codificar y transmitir las órdenes de preparación desde el sistema de control hacia la placa Arduino.</p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#305"><i
+                class="fa-solid fa-route"></i></a>
+            <h4><span class="me-2"><i
+                  class="fa-solid fa-truck-fast"></i></span>Premiación
+              Hackathon</h4>
+            <p>Estructurar el diseño del layout y el sloting de la bodega, de
+              forma que posteriormente se pueda definir el ruteo eficiente del
+              vehículo automatizado y la lógica de manipulación según la
+              disposición del inventario; por su parte, los aprendices de
+              software deberán codificar y transmitir las órdenes de preparación
+              desde el sistema de control hacia la placa Arduino.</p>
             <h6>29 de octubre 8:00 am - 3:00 pm</h6>
           </figure>
           <div class="modal" tabindex="-1" id="305">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="modalBasicLabel">Piso 3 - Ambiente 305</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h5 class="modal-title" id="modalBasicLabel">Piso 3 - Ambiente
+                    305</h5>
+                  <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <img src="img/305.jpg" alt="" class="img-fluid">
+                  <img src="img/305.jpg" alt class="img-fluid">
                 </div>
               </div>
             </div>
@@ -185,67 +188,96 @@
           <figure>
             <h3 class="badge">Varios ambientes</h3><br>
             <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#auditorio"><i class="fa-solid fa-route"></i></a> -->
-            <h4><span class="me-2"><i class="fa-solid fa-truck-fast"></i></span>OLIMPIADA DE COMERCIO EXTERIOR "EL RETO INTERNACIONAL"</h4>
-            <p>Es una competencia académica diseñada para fortalecer los conocimientos y habilidades de los aprendices mediante tres fases: clasificatoria, eliminatoria y Gran Final. Los participantes enfrentarán pruebas escritas, desafíos digitales y casos prácticos de comercio exterior, promoviendo aprendizaje, análisis, toma de decisiones y sana competencia académica.</p>
-            <h6>Ambiente 304 y 305 - 27 de octubre 2:00 pm - 5:00 pm / 6:30 pm - 9:00 pm</h6>
-            <h6>CEDI, Ambiente 304 y 305 - 29 de octubre 2:00 pm - 5:00 pm / 6:00 pm - 8:00 pm</h6>
-            <h6>Audivisuales - Premiación - 29 de octubre 5:00 pm - 6:00 pm / 8:00 pm - 9:00 pm</h6>
+            <h4><span class="me-2"><i
+                  class="fa-solid fa-truck-fast"></i></span>OLIMPIADA DE
+              COMERCIO EXTERIOR "EL RETO INTERNACIONAL"</h4>
+            <p>Es una competencia académica diseñada para fortalecer los
+              conocimientos y habilidades de los aprendices mediante tres fases:
+              clasificatoria, eliminatoria y Gran Final. Los participantes
+              enfrentarán pruebas escritas, desafíos digitales y casos prácticos
+              de comercio exterior, promoviendo aprendizaje, análisis, toma de
+              decisiones y sana competencia académica.</p>
+            <h6>Ambiente 304 y 305 - 27 de octubre 2:00 pm - 5:00 pm / 6:30 pm -
+              9:00 pm</h6>
+            <h6>CEDI, Ambiente 304 y 305 - 29 de octubre 2:00 pm - 5:00 pm /
+              6:00 pm - 8:00 pm</h6>
+            <h6>Audivisuales - Premiación - 29 de octubre 5:00 pm - 6:00 pm /
+              8:00 pm - 9:00 pm</h6>
           </figure>
           <figure>
             <h3 class="badge">CEDI (Piso -1)</h3>
             <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#agora"><i class="fa-solid fa-route"></i></a> -->
-            <h4><span class="me-2"><i class="fa-solid fa-truck-fast"></i></span>Pentaklon</h4>
-            <p>El Desafío de la Línea de Flujo es un juego competitivo diseñado para entrenar y evaluar las habilidades de picking (preparación de pedidos), control de inventario y velocidad de respuesta bajo un flujo continuo de banda transportadora.</p>
+            <h4><span class="me-2"><i
+                  class="fa-solid fa-truck-fast"></i></span>Pentaklon</h4>
+            <p>El Desafío de la Línea de Flujo es un juego competitivo diseñado
+              para entrenar y evaluar las habilidades de picking (preparación de
+              pedidos), control de inventario y velocidad de respuesta bajo un
+              flujo continuo de banda transportadora.</p>
             <h6>27 de octubre 8:00 am - 3:00 pm</h6>
           </figure>
 
           <figure>
             <h3 class="badge">Ágora</h3>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#agora"><i class="fa-solid fa-route"></i></a>
-            <h4><span class="me-2"><i class="fa-solid fa-truck-fast"></i></span>Experiencia inmersiva de realidad mixta</h4>
-            <p>Escenario virtual 3D para desarrollar una experiencia de aprendizaje asistida por entorno inmersivo accesible a través de visores de realidad extendida y reproducida en otras pantallas compatibles.</p>
-            <h6>28 de octubre de 9:00 am - 12:00 m | 29 de octubre de 1:00 pm a 4:00 pm</h6>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#agora"><i
+                class="fa-solid fa-route"></i></a>
+            <h4><span class="me-2"><i
+                  class="fa-solid fa-truck-fast"></i></span>Experiencia
+              inmersiva de realidad mixta</h4>
+            <p>Escenario virtual 3D para desarrollar una experiencia de
+              aprendizaje asistida por entorno inmersivo accesible a través de
+              visores de realidad extendida y reproducida en otras pantallas
+              compatibles.</p>
+            <h6>28 de octubre de 9:00 am - 12:00 m | 29 de octubre de 1:00 pm a
+              4:00 pm</h6>
           </figure>
           <div class="modal" tabindex="-1" id="agora">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="modalBasicLabel">Piso 4 - Ágora</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <h5 class="modal-title" id="modalBasicLabel">Piso 4 -
+                    Ágora</h5>
+                  <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <img src="img/agora-a.jpg" alt="" class="img-fluid">
+                  <img src="img/agora-a.jpg" alt class="img-fluid">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-	</main>
-	<footer class="container-fluid fondo-oscuro px-5 py-4">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 align-self-center text-center text-lg-start">
-							<img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI" class="logo-sena">
-						</div>
-						<div class="col-lg-8">
-							<div class="row">
-								<div class="col-12">
-									<p class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA 2026</strong> :: Ideas que compilan, talento que conecta</p>
-								</div>
-								<div class="col-12">
-									<p class="text-center text-lg-end copy"><strong>Desarrollo:</strong> Coordinación teleinformática</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/iconos.js"></script>
-</body>
+    </main>
+    <footer class="container-fluid fondo-oscuro px-5 py-4">
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 align-self-center text-center text-lg-start">
+                <img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI"
+                  class="logo-sena">
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-12">
+                    <p
+                      class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA
+                        2026</strong> :: Ideas que compilan, talento que
+                      conecta</p>
+                  </div>
+                  <div class="col-12">
+                    <p
+                      class="text-center text-lg-end copy"><strong>Desarrollo:</strong>
+                      Coordinación teleinformática</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/iconos.js"></script>
+  </body>
 </html>

@@ -1,628 +1,2057 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI - SENA</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-	<header class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 d-flex justify-content-center justify-content-lg-start align-items-center pt-4 pb-3 text-white">
-							<a href="index.html" class="text-white text-decoration-none">
-								<div id="logo"></div>
-							</a>
-						</div>
-						<div class="col-lg-8 d-lg-flex justify-content-lg-end align-items-center pb-3 pb-lg-0">
-							<!-- Inicio Navbar -->
-							<nav class="navbar navbar-expand-lg p-0">
-								<div class="container-fluid pe-0">
-									<a class="navbar-brand d-lg-none" href="#">Menú</a>
-									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-										<i class="fa-solid fa-bars"></i>
-									</button>
-									<div class="collapse navbar-collapse claro" id="navbarBasic">
-										<ul class="navbar-nav ms-auto mb-0 mb-xl-0 text-center">
-											<li class="nav-item mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-											</li>
-											<li class="nav-item dropdown mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-													Coordinaciones
-												</a>
-												<ul class="dropdown-menu">
-													<li><a class="dropdown-item" href="teleinformatica.html">Teleinformática</a></li>
-													<li><a class="dropdown-item" href="industrias-c.html">Ind. Creativas</a></li>
-													<li><a class="dropdown-item" href="mercadeo.html">Mercadeo</a></li>
-													<li><a class="dropdown-item" href="logistica.html">Logística</a></li>
-													<li><a class="dropdown-item" href="bilinguismo.html">Bilingüismo</a></li>
-												</ul>
-											</li>
-											<li class="nav-item mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-													<a class="nav-link me-lg-0 pe-lg-0" href="#">Agenda</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</nav>
-							<!-- Fin Navbar -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de
+      Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI -
+      SENA</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/proy-software.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./js/componentes/header.js" defer></script>
+  </head>
+  <body>
+    <header-component></header-component>
+    <div class="software-header-wrapper py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-11">
 
-	<main class="container">
-    <div class="row mb-md-3">
-			<div class="col-md-4 col-lg-3 mt-3">
-				<img src="img/logo-triada-creativa.jpg" class="img-fluid" alt="Logotipo Triada Creativa">
-			</div>
-      
-      <div class="col-md pt-2 pt-md-0 d-md-flex align-items-end justify-content-end">
-        <h3 class="text-center pt-3 mb-md-0"><i class="fa-solid fa-laptop-code"></i> Software</h3>
+            <!-- 1. Indicador Superior Estilo Terminal Bash -->
+            <div class="mb-4 text-start">
+              <div
+                class="d-inline-flex align-items-center gap-2 bg-dark bg-opacity-90 px-3 py-15 rounded-3 border border-cyan border-opacity-40 font-monospace shadow-sm terminal-box box-sha"
+                style="font-size: 12px;">
+                <span class="text-purple fw-bold">root@cgmlti</span>
+                <span class="text-secondary">:</span>
+                <span class="text-cyan">~</span>
+                <span class="text-info fw-bold">$</span>
+                <span class="text-light opacity-90">conexia --coordinacion
+                  teleinformatica --triada-creativa</span>
+              </div>
+            </div>
+
+            <!-- 2. Contenedor Principal: Logo Tríada + Bloque Software -->
+            <div
+              class="d-flex align-items-center justify-content-between flex-column flex-md-row gap-4 mt-2">
+
+              <!-- Lado Izquierdo: Logo Tríada Creativa -->
+              <div
+                class="bg-white p-3 rounded-4 logo-triada-box flex-shrink-0 box-sha">
+                <img src="img/logo-triada-creativa.jpg" alt="Tríada Creativa"
+                  class="img-fluid"
+                  style="max-height: 80px; min-width: 170px; object-fit: contain;">
+              </div>
+
+              <!-- Lado Derecho: Icono </> y Título Software con Resplandor Neón -->
+              <div class="d-flex align-items-center gap-3 software-title-group">
+
+                <!-- Caja de Icono Código </> -->
+                <div
+                  class="code-icon-box rounded-4 d-flex align-items-center justify-content-center flex-shrink-0">
+                  <i class="fa-solid fa-code text-purple-bright fs-2"></i>
+                </div>
+
+                <!-- Textos de Software -->
+                <div class="text-start">
+                  <h1
+                    class="fw-bold text-purple-glow text-white mb-0 software-heading">
+                    Software
+                  </h1>
+                  <div
+                    class="font-monospace text-cyan fw-bold fs-6 tracking-wide subtext-adso">
+                    &lt;MUESTRA_TECNOLÓGICA_ADSO_2026/&gt;
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
+    <div class="filter-bar-wrapper py-3">
+      <div class="container-fluid px-md-4">
+
+        <!-- Línea Divisora Superior Fina -->
+        <div class="border-top border-cyan border-opacity-25 mb-3"></div>
+
+        <div
+          class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+
+          <!-- Lado Izquierdo: Telemetría e Indicadores con Puntos Neón -->
+          <div
+            class="d-flex align-items-center flex-wrap gap-3 gap-md-4 font-monospace"
+            style="font-size: 0.8rem;">
+
+            <!-- Indicador 1: TOTAL PROYECTOS (Cian) -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="dot-indicator bg-cyan shadow-cyan"></span>
+              <span class="text-cyan font-monospace">TOTAL:</span>
+              <span class="text-white fw-bold">26 PROYECTOS</span>
+            </div>
+
+            <!-- Indicador 2: AMBIENTES TÉCNICOS (Ámbar/Amarillo) -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="dot-indicator bg-amber shadow-amber"></span>
+              <span class="text-amber font-monospace">4 AMBIENTES
+                TÉCNICOS</span>
+            </div>
+
+            <!-- Indicador 3: JORNADAS (Púrpura/Morado) -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="dot-indicator bg-purple shadow-purple"></span>
+              <span class="text-purple font-monospace">JORNADAS: 27 , 28 Y 29 </span>
+            </div>
+
+          </div>
+
+          <!-- Lado Derecho: Botones de Filtro por Ambiente -->
+          <div
+            class="d-flex align-items-center gap-2 flex-wrap filter-buttons-group">
+
+            <!-- Botón Activo [TODOS] -->
+            <button
+              class="btn btn-filter active-filter font-monospace px-3 py-1 text-uppercase fw-bold">
+              [TODOS]
+            </button>
+
+            <!-- Botones de Ambientes (Estilo Consola) -->
+            <button class="btn btn-filter font-monospace px-3 py-1 text-amber">
+              <a href="#" data-bs-toggle="modal"
+                data-bs-target="#210">Ambiente 210</a>
+            </button>
+
+            <button class="btn btn-filter font-monospace px-3 py-1 text-amber">
+              <a href="#" data-bs-toggle="modal"
+                data-bs-target="#211">Ambiente 211</a>
+            </button>
+
+            <button class="btn btn-filter font-monospace px-3 py-1 text-amber">
+              <a href="#" data-bs-toggle="modal"
+                data-bs-target="#509">Ambiente 509</a>
+            </button>
+
+            <button class="btn btn-filter font-monospace px-3 py-1 text-amber">
+              <a href="#" data-bs-toggle="modal"
+                data-bs-target="#510">Ambiente 510</a>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="proyectos-wrapper py-4">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+
+          <!-- Tarjeta 1: CICLAP -->
+          <div class="col-12 col-lg-6">
+            <div
+              class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+              <div>
+                <!-- Header de la tarjeta: Insignia Ambiente + Icono Enlace -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3">
+                  <span
+                    class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                    AMBIENTE 408
+                  </span>
+                  <a href="#" class="link-proyecto text-purple-bright fs-5"
+                    title="Ver proyecto">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+
+                <!-- Título con Icono Pantalla -->
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                  <h3
+                    class="fw-bold text-cyan font-monospace fs-4 mb-0">01
+                    CICLAP</h3>
+                </div>
+
+                <!-- Descripción -->
+                <p class="text-secondary small lh-base mb-3"
+                  style="font-size: 0.88rem;">
+                  Sistema integral para la optimización de procesos académicos y
+                  ciclos de aprendizaje continuo institucional.
+                </p>
+
+                <!-- Tags / Tecnologías -->
+                <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                  <span
+                    class="tag-tech px-2 py-1 rounded text-cyan">#React</span>
+                  <span
+                    class="tag-tech px-2 py-1 rounded text-cyan">#NodeJS</span>
+                  <span
+                    class="tag-tech px-2 py-1 rounded text-cyan">#PostgreSQL</span>
+                </div>
+              </div>
+
+              <!-- Footer de la tarjeta: Horarios por Fecha -->
+              <div
+                class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="text-cyan fw-bold" style="font-size: 12px;">27
+                    oct:</span>
+                  <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                </div>
+                <span
+                  class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                <div class="d-flex align-items-center gap-1">
+                  <span class="text-cyan fw-bold" style="font-size: 12px;">28
+                    oct:</span>
+                  <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-1">
+                  <span class="text-purple-bright fw-bold"
+                    style="font-size: 12px;">29 oct:</span>
+                  <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: VITALPET -->
+          <div class="col-12 col-lg-6">
+            <div
+              class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+              <div>
+                <!-- Header de la tarjeta: Insignia Ambiente + Icono Enlace -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3">
+                  <span
+                    class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                    AMBIENTE 408
+                  </span>
+                  <a href="#" class="link-proyecto text-purple-bright fs-5"
+                    title="Ver proyecto">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </div>
+
+                <!-- Título con Icono Pantalla -->
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                  <h3
+                    class="fw-bold text-cyan font-monospace fs-4 mb-0">02
+                    VITALPET</h3>
+                </div>
+
+                <!-- Descripción -->
+                <p class="text-secondary small lh-base mb-3"
+                  style="font-size: 0.88rem;">
+                  Plataforma web de gestión de historias clínicas veterinarias,
+                  agendamiento de citas y trazabilidad de vacunas.
+                </p>
+
+                <!-- Tags / Tecnologías -->
+                <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                  <span
+                    class="tag-tech px-2 py-1 rounded text-cyan">#VueJS</span>
+                  <span
+                    class="tag-tech px-2 py-1 rounded text-cyan">#Laravel</span>
+                  <span
+                    class="tag-tech px-2 py-1 rounded text-cyan">#MySQL</span>
+                </div>
+              </div>
+
+              <!-- Footer de la tarjeta: Horarios por Fecha -->
+              <div
+                class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                <div class="d-flex align-items-center gap-1">
+                  <span class="text-cyan fw-bold" style="font-size: 12px;">27
+                    oct:</span>
+                  <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                </div>
+                <span
+                  class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                <div class="d-flex align-items-center gap-1">
+                  <span class="text-cyan fw-bold" style="font-size: 12px;">28
+                    oct:</span>
+                  <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-1">
+                  <span class="text-purple-bright fw-bold"
+                    style="font-size: 12px;">29 oct:</span>
+                  <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="proyectos-wrapper py-4">
+          <div class="container">
+            <div class="row g-4 justify-content-center">
+              <!-- Tarjeta 1: APRENZY -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente + Icono Link -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 408
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">08
+                        APRENZY</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Ambiente virtual gamificado para reforzar competencias de
+                      lógica computacional y algoritmos básicos.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Vue3</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#PhaserIO</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Express</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: HUELLITAS SALUDABLES -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente + Icono Link -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 409
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">09
+                        HUELLITAS
+                        SALUDABLES</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Software para fundaciones de rescate animal que gestiona
+                      adopción responsable, vacunas y salud.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#PHP8</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Laravel</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#MySQL</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 408
+                      </span>
+                      <a href="#"
+                        class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">15
+                        ZENDA</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Asistente cognitivo inteligente para soporte al
+                      bienestar emocional y hábitos saludables de estudio.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div
+                      class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#PythonAI</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#React</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#LangChain</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: NEXUS -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 409
+                      </span>
+                      <a href="#"
+                        class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">16
+                        NEXUS</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Sistema centralizado de comunicación interna y
+                      repositorio de recursos compartidos para grupos de
+                      investigación.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div
+                      class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NextJS</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Tailwind</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#GraphQL</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 408
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">22
+                        VERDEAPP</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Solución ecológica para el reciclaje domiciliario y canje
+                      de puntos verdes por beneficios de transporte urbano.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#ReactNative</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Express</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#MongoDB</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: SAIP -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 408
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">23
+                        SAIP</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Sistema de Alertas Tempranas e Identificación de Patrones
+                      de riesgo en infraestructura física y lógica.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Python</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#TensorFlow</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Flask</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 211 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 409
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">03
+                        FEEDBACK</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Herramienta colaborativa para recopilación de opiniones
+                      estudiantiles en tiempo real y métricas de satisfacción
+                      docente.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NextJS</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Tailwind</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#FastAPI</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">8:00 pm - 12:00 m</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: SMILE CLOUD -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 211 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 409
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">04
+                        SMILE
+                        CLOUD</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Software en la nube para consultorios odontológicos con
+                      soporte para odontogramas digitales interactivos.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Angular</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#SpringBoot</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Docker</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">8:00 pm - 12:00 m</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 1: REVENFY -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 211 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 409
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">10
+                        REVENFY</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Dashboard de contabilidad e inteligencia financiera para
+                      microempresarios, optimizando facturación y flujo de caja.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NextJS</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#ChartJS</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Supabase</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: BUYDRAX -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 211 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 410
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">11
+                        BUYDRAX</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      E-commerce B2B con gestión automatizada de pedidos
+                      masivos, inventarios en bodegas remotas y notas de
+                      crédito.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#React</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#GoLang</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#MongoDB</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 1: SIA -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 211 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 409
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">17
+                        SIA</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Sistema de Información de Almacén con control de stock en
+                      tiempo real mediante lectores de códigos QR dinámicos.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#ReactNative</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NodeJS</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#MySQL</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: SENA ATTENDANCE -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 211 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 410
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">18
+                        SENA
+                        ATTENDANCE</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Registro biométrico y por geocerca para control de
+                      asistencia de aprendices e instructores a sesiones
+                      presenciales.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Flutter</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#FastAPI</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Postgres</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 1: SIGNBRIDGE (Ambiente 211) -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 211 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 409
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">24
+                        SIGNBRIDGE</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Traductor en tiempo real de lengua de señas colombiana
+                      (LSC) a voz y texto con visión artificial mediante cámara
+                      web.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#MediaPipe</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#TensorFlow</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NextJS</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">6:00 pm - 8:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: AGRO DIRECTO (Ambiente 509) -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 509 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 410
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">05
+                        AGRO
+                        DIRECTO</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Marketplace agrícola directo del campo a la ciudad que
+                      elimina intermediarios comerciales y fomenta precios
+                      justos.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Flutter</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Firebase</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NestJS</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 1: EV CHARGE -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 509 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 410
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3 class="fw-bold text-cyan font-monospace fs-4 mb-0">06
+                        EV
+                        CHARGE</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Monitoreo y geolocalización inteligente de estaciones de
+                      carga eléctrica con pasarela de prepago integrada.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#IoT</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#ReactNative</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Python</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: ZAFIRO BLOOM TOURS -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 509 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 410
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">12
+                        ZAFIRO
+                        BLOOM TOURS</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Plataforma turística para reservas de experiencias
+                      ecológicas, rutas de senderismo y guías locales
+                      comunitarios.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#FlutterWeb</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NodeJS</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#PostgreSQL</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 1: SGA SISTEMA DE GESTIÓN DE ALQUILERES -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 509 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 412
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3 class="fw-bold text-cyan font-monospace fs-4 mb-0">13
+                        SGA
+                        SISTEMA DE GESTIÓN DE ALQUILERES</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Administración integral de contratos inmobiliarios,
+                      recaudos automáticos por PSE y generación de alertas de
+                      mora.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#React</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#SpringBoot</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#OracleSQL</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: ASIS - ASISTENCIA INTEGRAL SENA -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 509 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 410
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">19
+                        ASIS
+                        - ASISTENCIA INTEGRAL SENA</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Módulo de acompañamiento psicopedagógico y gestión de
+                      beneficios institucionales para la comunidad educativa.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Angular</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NestJS</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#MongoDB</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 1: STUDNOVA (Ambiente 509) -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 509 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 412
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">20
+                        STUDNOVA</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Incubadora de proyectos y portafolio de talento egresado
+                      para vinculación directa con empresas de tecnología del
+                      país.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Vue3</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#NodeJS</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#PostgreSQL</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: COFFEE FLY (Ambiente 510) -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 510 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 408
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">07
+                        COFFEE
+                        FLY</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Sistema de control de calidad y catación de cafés
+                      especiales con análisis predictivo de perfiles de taza
+                      sensorial.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Django</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Postgres</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Tailwind</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 1: SYNCPAGO (Ambiente 510) -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 510 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 408
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">14
+                        SYNCPAGO</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Pasarela unificada y reconciliación de transacciones
+                      electrónicas para comercios medianos en múltiples bancos.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Python</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#FastAPI</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Redis</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: VEXTOR (Ambiente 510) -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 510 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 412
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">21
+                        VEXTOR</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Motor de procesamiento de imágenes vectoriales y
+                      renderizado web asistido para diagramas UML colaborativos.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#WebAssembly</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Canvas2D</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Rust</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 1: TITANV -->
+              <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 510 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 412
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">25
+                        TITANV</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Plataforma integral para la gestión y control de proyectos
+                      de construcción que centraliza información operativa,
+                      logística y técnica en tiempo real. Permite administrar
+                      obras, recursos y evidencias multimedia, además de
+                      informar el avance a los clientes, ofreciendo una solución
+                      sin costos de licenciamiento para pequeñas y medianas
+                      constructoras.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#WebAssembly</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Canvas2D</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Rust</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">8:00 pm - 12:00 m</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tarjeta 2: AsistenciaApp -->
+               <div class="col-12 col-lg-6">
+                <div
+                  class="card-proyecto p-4 rounded-4 position-relative d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <!-- Header: Insignia Ambiente 510 + Icono Enlace -->
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3">
+                      <span
+                        class="badge-ambiente bg-amber font-monospace text-dark fw-bold px-2 py-1 rounded">
+                        AMBIENTE 412
+                      </span>
+                      <a href="#" class="link-proyecto text-purple-bright fs-5"
+                        title="Ver proyecto">
+                        <i class="fa-solid fa-link"></i>
+                      </a>
+                    </div>
+
+                    <!-- Título con Icono Pantalla -->
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                      <i class="fa-solid fa-desktop text-cyan fs-5"></i>
+                      <h3
+                        class="fw-bold text-cyan font-monospace fs-4 mb-0">26 AsistenciaApp</h3>
+                    </div>
+
+                    <!-- Descripción -->
+                    <p class="text-secondary small lh-base mb-3"
+                      style="font-size: 0.88rem;">
+                      Sistema de gestión de asistencia.
+                    </p>
+
+                    <!-- Tags / Tecnologías -->
+                    <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#WebAssembly</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Canvas2D</span>
+                      <span
+                        class="tag-tech px-2 py-1 rounded text-cyan">#Rust</span>
+                    </div>
+                  </div>
+
+                  <!-- Footer: Horarios -->
+                  <div
+                    class="border-top border-secondary border-opacity-25 pt-3 d-flex justify-content-between align-items-center font-monospace text-secondary small flex-wrap gap-2">
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">27 oct:</span>
+                      <span style="font-size: 12px;">3:00 pm - 6:00 pm</span>
+                    </div>
+                    <span
+                      class="text-secondary opacity-25 d-none d-sm-inline">|</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-cyan fw-bold"
+                        style="font-size: 12px;">28 oct:</span>
+                      <span style="font-size: 12px;">8:00 am - 12:00 m</span>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-1">
+                      <span class="text-purple-bright fw-bold"
+                        style="font-size: 12px;">29 oct:</span>
+                      <span style="font-size: 12px;">12:00 m - 3:00 pm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid fondo-oscuro px-5 py-4">
       <div class="row">
-      <div class="col">
-        <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#210"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Ciclap</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 8:00 am a 12:00 m &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 12:00 m a 3:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="210">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 210</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/210.jpg" alt="" class="img-fluid">
-              </div>
+        <div class="col-lg-4 align-self-center text-center text-lg-start">
+          <img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI"
+            class="logo-sena">
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-12">
+              <p
+                class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA
+                  2026</strong> :: Ideas que compilan, talento que conecta</p>
+            </div>
+            <div class="col-12">
+              <p
+                class="text-center text-lg-end copy"><strong>Desarrollo:</strong>
+                Coordinación teleinformática</p>
             </div>
           </div>
         </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#210"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>VitalPet</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 8:00 am a 12:00 m  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 12:00 m a 3:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="210">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 210</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/210.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-      
-      <figure>
-          <h3 class="badge">Ambiente 211</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#211"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Feedback</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 8:00 am a 12:00 m &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 12:00 m a 3:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="211">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 211</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/211.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 211</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#211"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Smile Cloud</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 8:00 am a 12:00 m  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 12:00 m a 3:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="211">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 211</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/211.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#509"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Agro Directo</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 8:00 am a 12:00 m  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 12:00 m a 3:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="509">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 509</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/509.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#509"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>EV Charge</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 8:00 am a 12:00 m  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 12:00 m a 3:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="509">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 509</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/509.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#510"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Coffee Fly</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 8:00 am a 12:00 m &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 12:00 m a 3:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="510">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 510</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/510.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/iconos.js"></script>
+  </body>
+</html>
 
-        <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#210"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Aprenzy</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 12:00 m a 3:00 pm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 3:00 pm a 6:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="210">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 210</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/210.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#210"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Huellitas Saludables</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 12:00 m a 3:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 3:00 pm a 6:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="210">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 210</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/210.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 211</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#211"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Revenfy</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 12:00 m a 3:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 3:00 pm a 6:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="211">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 211</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/211.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 211</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#211"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Buydrax</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 12:00 m a 3:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 3:00 pm a 6:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="211">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 211</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/211.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#509"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Zafiro Bloom Tours</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 12:00 m a 3:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 3:00 pm a 6:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="509">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 509</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/509.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#509"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>SGA Sistema de Gestión de Alquileres</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 12:00 m a 3:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 3:00 pm a 6:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="509">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 509</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/509.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#510"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>SYNCPAGO</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 12:00 m a 3:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 3:00 pm a 6:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="510">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 510</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/510.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#210"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Zenda</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 3:00 pm a 6:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 8:00 am a 12:00 m</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="210">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 210</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/210.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#210"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>Nexus</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 3:00 pm a 6:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 8:00 am a 12:00 m</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="210">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 210</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/210.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 211</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#211"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>SIA</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 3:00 pm a 6:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 8:00 am a 12:00 m</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="211">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 211</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/211.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 211</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#211"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>SENA attendance</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 3:00 pm a 6:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 8:00 am a 12:00 m</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="211">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 211</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/211.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#509"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>ASIS – Asistencia integral SENA </h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 3:00 pm a 6:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 8:00 am a 12:00 m</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="509">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 509</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/509.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 509</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#509"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>STUDNOVA</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 3:00 pm a 6:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 8:00 am a 12:00 m</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="509">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 509</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/509.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 510</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#510"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>VEXTOR</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 3:00 pm a 6:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 8:00 am a 12:00 m</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="510">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente 510</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/510.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#210"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>VERDEAPP</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 6:00 pm a 8:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 6:00 pm a 8:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="210">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 210</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/210.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 210</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#210"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>SAIP</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 6:00 pm a 8:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 6:00 pm a 8:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="210">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 210</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/210.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
-        <figure>
-          <h3 class="badge">Ambiente 211</h3>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#211"><i class="fa-solid fa-route"></i></a>
-          <h4><span class="me-2"><i class="fa-solid fa-laptop-code"></i></span>SIGNBRIDGE</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci nobis tempore animi reprehenderit cumque? Error fugiat consectetur repellat illum est. Minus velit sint quo reiciendis expedita magnam dignissimos impedit?</p>
-          <h6>28 de octubre - 6:00 pm a 8:00 pm &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 29 de octubre - 6:00 pm a 8:00 pm</h6>
-        </figure>
-        <!-- Inicio modal -->
-         <div class="modal" tabindex="-1" id="211">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente 211</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="img/211.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin modal -->
+<!-- Inicio modal -->
+<div class="modal" tabindex="-1" id="210">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente
+          210</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/210.jpg" alt class="img-fluid">
       </div>
     </div>
-	</main>
-	<footer class="container-fluid fondo-oscuro px-5 py-4">
-		<div class="row">
-			<div class="col-lg-4 align-self-center text-center text-lg-start">
-				<img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI" class="logo-sena">
-			</div>
-			<div class="col-lg-8">
-				<div class="row">
-					<div class="col-12">
-						<p class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA 2026</strong> :: Ideas que compilan, talento que conecta</p>
-					</div>
-					<div class="col-12">
-						<p class="text-center text-lg-end copy"><strong>Desarrollo:</strong> Coordinación teleinformática</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/iconos.js"></script>
-</body>
-</html>
+  </div>
+</div>
+<!-- Fin modal -->
+
+<!-- Inicio modal -->
+<div class="modal" tabindex="-1" id="211">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBasicLabel">Piso 2 - Ambiente
+          211</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/211.jpg" alt class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin modal -->
+<!-- Inicio modal -->
+<div class="modal" tabindex="-1" id="509">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente
+          509</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/509.jpg" alt class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin modal -->
+
+<!-- Inicio modal -->
+<div class="modal" tabindex="-1" id="510">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBasicLabel">Piso 5 - Ambiente
+          510</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/510.jpg" alt class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin modal -->

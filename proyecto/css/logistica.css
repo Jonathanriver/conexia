@@ -1,0 +1,198 @@
+ /* Fondo General con Malla Técnica Grid */
+ .logex-wrapper {
+     background-color: #020609;
+     background-image:
+         linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+         linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+     background-size: 32px 32px;
+ }
+
+ /* Píldora de Estado */
+ .status-pill-logex {
+     background: rgba(4, 10, 15, 0.85) !important;
+     letter-spacing: 0.5px;
+ }
+
+ /* Resplandor Neón del Logo LOGEX */
+ .logo-logex-glow {
+     box-shadow: 0 0 35px rgba(16, 185, 129, 0.25) !important;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .logo-logex-glow:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 0 45px rgba(16, 185, 129, 0.4) !important;
+ }
+
+ /* Puntos Brillantes */
+ .punto-brillante-emerald {
+     width: 7px;
+     height: 7px;
+     background-color: #10b981;
+     border-radius: 50%;
+     box-shadow: 0 0 8px #10b981;
+     display: inline-block;
+     flex-shrink: 0;
+ }
+
+ /* Colores Misionales */
+ .text-emerald {
+     color: #10b981 !important;
+ }
+
+ .border-emerald {
+     border-color: rgba(16, 185, 129, 0.4) !important;
+ }
+
+ /* Tarjetas de Métricas Estadísticas */
+ .card-metrica-logex {
+     background: linear-gradient(145deg, #050d14 0%, #020508 100%);
+     border: 1px solid rgba(255, 255, 255, 0.08);
+     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+ }
+
+ .card-metrica-logex:hover {
+     transform: translateY(-4px);
+     border-color: rgba(16, 185, 129, 0.4);
+     box-shadow: 0 0 20px rgba(16, 185, 129, 0.15);
+ }
+
+ .number-stat {
+     font-size: 2.1rem;
+     line-height: 1;
+     letter-spacing: 0.5px;
+ }
+
+ .label-stat {
+     font-size: 0.65rem;
+     letter-spacing: 1px;
+     color: #cbd5e1 !important;
+ }
+
+ .sublabel-stat {
+     font-size: 0.58rem;
+     letter-spacing: 0.5px;
+     margin-top: 2px;
+ }
+
+ /* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+ @media (max-width: 767.98px) {
+     .status-pill-logex {
+         font-size: 0.58rem !important;
+         padding: 0.35rem 0.6rem !important;
+     }
+
+     .descripcion-logex {
+         font-size: 0.8rem !important;
+     }
+
+     .number-stat {
+         font-size: 1.5rem !important;
+     }
+
+     .label-stat {
+         font-size: 0.55rem !important;
+     }
+
+     .sublabel-stat {
+         font-size: 0.5rem !important;
+     }
+ }
+
+ /* Estructura Base de la Tarjeta Clara */
+ .card-light {
+     background-color: #ffffff;
+     border: 1px solid rgba(0, 0, 0, 0.05);
+     border-radius: 2rem !important;
+     /* Esquinas súper redondeadas estilo rounded-5 */
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .card-light:hover {
+     transform: translateY(-5px);
+ }
+
+ /* Tarjeta 1: Resplandor y Borde Inferior Cian */
+ .card-glow-cyan {
+     border-bottom: 4px solid #38bdf8 !important;
+     box-shadow: 0 15px 35px rgba(56, 189, 248, 0.25),
+         0 5px 15px rgba(0, 0, 0, 0.05);
+ }
+
+ /* Tarjeta 2: Resplandor y Borde Inferior Amarillo / Dorado */
+ .card-glow-amber {
+     border-bottom: 4px solid #facc15 !important;
+     box-shadow: 0 15px 35px rgba(250, 204, 21, 0.25),
+         0 5px 15px rgba(0, 0, 0, 0.05);
+ }
+
+ /* Círculos de los Iconos */
+ .icon-circle {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .circle-cyan {
+     background-color: #e0f2fe;
+     /* Azul / Cian muy claro */
+ }
+
+ .text-cyan-icon {
+     color: #38bdf8 !important;
+     /* Celeste / Cian brillante */
+ }
+
+ .circle-amber {
+     background-color: #fef9c3;
+     /* Amarillo pastel suave */
+ }
+
+ .text-amber-icon {
+     color: #f59e0b !important;
+     /* Dorado / Amarillo brillante */
+ }
+
+ /* Tipografías y Colores de Texto */
+ .text-purple-title {
+     color: #581c87 !important;
+     /* Púrpura profundo elegante */
+ }
+
+ .text-dark-description {
+     color: #334155 !important;
+     /* Gris oscuro legible */
+     font-size: 0.88rem;
+ }
+
+ /* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+ @media (max-width: 767.98px) {
+     .card-light {
+         padding: 2rem 1.25rem !important;
+         border-radius: 1.5rem !important;
+     }
+
+     .icon-circle {
+         width: 65px;
+         height: 65px;
+     }
+
+     .icon-circle i {
+         font-size: 1.4rem !important;
+     }
+
+     .text-purple-title {
+         font-size: 1.35rem !important;
+     }
+
+     .text-dark-description {
+         font-size: 0.78rem !important;
+     }
+ }

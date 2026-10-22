@@ -1,0 +1,284 @@
+.software-header-wrapper {
+    background-color: #030509;
+    background-image:
+        linear-gradient(rgba(168, 85, 247, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* Terminal Prompt Superior */
+.terminal-box {
+    background: #060910 !important;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.15) !important;
+}
+
+/* Caja de Logo Tríada */
+.logo-triada-box {
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.25) !important;
+}
+
+/* Icono </> con Fondo Púrpura Oscuro y Borde */
+.code-icon-box {
+    width: 68px;
+    height: 68px;
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+}
+
+/* Título Software con Resplandor Neón Morado */
+.software-heading {
+    font-size: 3.5rem;
+    line-height: 0.95;
+    letter-spacing: -1px;
+    color: #d8b4fe !important;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.8),
+        0 0 40px rgba(168, 85, 247, 0.4);
+}
+
+/* Colores y Tipografías */
+.text-purple {
+    color: #a855f7 !important;
+}
+
+.text-purple-bright {
+    color: #c084fc !important;
+}
+
+.text-cyan {
+    color: #22d3ee !important;
+}
+
+.border-cyan {
+    border-color: rgba(6, 182, 212, 0.4) !important;
+}
+
+.tracking-wide {
+    letter-spacing: 1px;
+}
+
+.box-sha {
+    box-shadow: 0 0 20px rgba(6, 182, 213, 1.15) !important;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .terminal-box {
+        font-size: 0.62rem !important;
+        padding: 0.4rem 0.6rem !important;
+        word-break: break-all;
+    }
+
+    .software-heading {
+        font-size: 2.25rem !important;
+    }
+
+    .code-icon-box {
+        width: 52px;
+        height: 52px;
+    }
+
+    .code-icon-box i {
+        font-size: 1.3rem !important;
+    }
+
+    .subtext-adso {
+        font-size: 0.75rem !important;
+    }
+}
+
+/* Fondo General con Malla Técnica Dark */
+.filter-bar-wrapper {
+    background-color: #030509;
+    background-image:
+        linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* Puntos Indicadores Neón */
+.dot-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.bg-cyan {
+    background-color: #06b6d4;
+}
+
+.shadow-cyan {
+    box-shadow: 0 0 8px #06b6d4;
+}
+
+.text-cyan {
+    color: #06b6d4 !important;
+}
+
+.bg-amber {
+    background-color: #f59e0b;
+}
+
+.shadow-amber {
+    box-shadow: 0 0 8px #f59e0b;
+}
+
+.text-amber {
+    color: #f59e0b !important;
+}
+
+.bg-purple {
+    background-color: #c084fc;
+}
+
+.shadow-purple {
+    box-shadow: 0 0 8px #c084fc;
+}
+
+.text-purple {
+    color: #c084fc !important;
+}
+
+.border-cyan {
+    border-color: rgba(6, 182, 212, 0.3) !important;
+}
+
+/* Estilo de Botones de Filtro */
+.btn-filter {
+    background: rgba(6, 182, 212, 0.05);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    border-radius: 4px;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.btn-filter:hover {
+    background: rgba(6, 182, 212, 0.15);
+    border-color: #06b6d4;
+    color: #fff !important;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+}
+
+/* Botón Activo [TODOS] */
+.btn-filter.active-filter {
+    background-color: #00b4d8 !important;
+    border-color: #00b4d8 !important;
+    color: #000000 !important;
+    box-shadow: 0 0 12px rgba(0, 180, 216, 0.6) !important;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .filter-bar-wrapper {
+        padding-top: 0.75rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    .dot-indicator {
+        width: 6px;
+        height: 6px;
+    }
+
+    .filter-buttons-group {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap !important;
+        padding-bottom: 0.25rem;
+    }
+
+    .btn-filter {
+        font-size: 0.7rem !important;
+        padding: 0.25rem 0.6rem !important;
+        white-space: nowrap;
+    }
+}
+
+/* Contenedor General con Malla Técnica Dark */
+.proyectos-wrapper {
+    background-color: #030509;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* Estructura de la Tarjeta */
+.card-proyecto {
+    background: linear-gradient(145deg, #060b12 0%, #03060a 100%);
+    border: 1px solid rgba(6, 182, 212, 0.18);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-proyecto:hover {
+    transform: translateY(-4px);
+    border-color: rgba(6, 182, 212, 0.45);
+    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.12);
+}
+
+/* Insignia del Ambiente */
+.bg-amber {
+    background-color: #fca5a5;
+    background: linear-gradient(135deg, #fcd34d 0%, #f59e0b 100%);
+    font-size: 0.68rem;
+    letter-spacing: 0.5px;
+}
+
+/* Icono Enlace Esquina Superior Derecha */
+.link-proyecto {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.85;
+}
+
+.link-proyecto:hover {
+    transform: rotate(-15deg) scale(1.15);
+    opacity: 1;
+}
+
+/* Tags / Etiquetas de Tecnologías */
+.tag-tech {
+    background: rgba(6, 182, 212, 0.08);
+    border: 1px solid rgba(6, 182, 212, 0.25);
+    font-size: 0.72rem;
+    letter-spacing: 0.3px;
+}
+
+/* Colores misionales */
+.text-cyan {
+    color: #06b6d4 !important;
+}
+
+.text-purple-bright {
+    color: #c084fc !important;
+}
+
+/* ========================================================
+       AJUSTES EXCLUSIVOS PARA MÓVIL (< 768px)
+       ================================================-------- */
+@media (max-width: 767.98px) {
+    .card-proyecto {
+        padding: 1.25rem !important;
+    }
+
+    .card-proyecto h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .tag-tech {
+        font-size: 0.65rem !important;
+        padding: 0.2rem 0.4rem !important;
+    }
+
+    .card-proyecto .small {
+        font-size: 0.72rem !important;
+    }
+}

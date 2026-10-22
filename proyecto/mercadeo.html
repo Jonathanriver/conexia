@@ -1,143 +1,431 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI - SENA</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-	<header class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 d-flex justify-content-center justify-content-lg-start align-items-center pt-4 pb-3 text-white">
-							<a href="index.html" class="text-white text-decoration-none">
-								<div id="logo"></div>
-							</a>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CONEXIA 2026 :: Ideas que compilan, talento que conecta - Centro de
+			Gestión de Mercados, Logística y Tecnologías de la Información CGMLTI -
+			SENA</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/mercadeo.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+			integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+		<script src="./js/componentes/header.js" defer></script>
+	</head>
+	<body>
+		<header-component></header-component>
+		<div class="mercadeo-wrapper py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-xl-10 text-center">
+
+						<!-- 1. Píldora Superior de Coordinación -->
+						<div
+							class="d-inline-flex align-items-center gap-2 bg-dark bg-opacity-75 px-3 py-1 rounded-pill border border-amber border-opacity-50 font-monospace text-amber shadow-sm mb-4 status-pill-mercadeo">
+							<span class="punto-brillante-amber"></span>
+							<span>// CONEXIA 2026 :: COORDINACIÓN DE MERCADEO :: CASA DEL
+								MERCADO</span>
 						</div>
-						<div class="col-lg-8 d-lg-flex justify-content-lg-end align-items-center pb-3 pb-lg-0">
-							<!-- Inicio Navbar -->
-							<nav class="navbar navbar-expand-lg p-0">
-								<div class="container-fluid pe-0">
-									<a class="navbar-brand d-lg-none" href="#">Menú</a>
-									<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
-										<i class="fa-solid fa-bars"></i>
-									</button>
-									<div class="collapse navbar-collapse claro" id="navbarBasic">
-										<ul class="navbar-nav ms-auto mb-0 mb-xl-0 text-center">
-											<li class="nav-item mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-											</li>
-											<li class="nav-item dropdown mx-lg-2 mx-xl-3 mx-xxl-5 my-3 my-lg-0">
-												<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-													Coordinaciones
-												</a>
-												<ul class="dropdown-menu">
-													<li><a class="dropdown-item" href="teleinformatica.html">Teleinformática</a></li>
-													<li><a class="dropdown-item" href="industrias-c.html">Ind. Creativas</a></li>
-													<li><a class="dropdown-item" href="mercadeo.html">Mercadeo</a></li>
-													<li><a class="dropdown-item" href="logistica.html">Logística</a></li>
-													<li><a class="dropdown-item" href="bilinguismo.html">Bilingüismo</a></li>
-													<li><a class="dropdown-item" href="bienestar.html">Bienestar al aprendiz</a></li>
-												</ul>
-											</li>
-											
-										</ul>
-									</div>
+
+						<!-- 2. Contenedor del Logo Principal (MMW + MARKETING Mix WEEK) -->
+						<div
+							class="d-flex justify-content-center align-items-center gap-3 gap-md-4 my-4 flex-column flex-md-row">
+
+							<!-- Siglas MMW con resplandor neón -->
+							<div class="logo-mmw fw-bold fst-italic">
+								<img src="img/logo-mercadeo.png" alt="Logo Marketing Mix Week" class="logo-mmw-img img-fluid logo-mmw-effect">
+								<!-- <span class="mmw-amber">MM</span><span class="mmw-silver">W</span> -->
+							</div>
+
+							<!-- Divisor Vertical (se oculta en móvil) -->
+							<!-- <div class="divisor-vertical d-none d-md-block"></div> -->
+
+							<!-- Texto del Nombre del Evento -->
+							<!-- <div class="text-start text-center-mobile">
+								<h1 class="fw-black text-white text-uppercase mb-0 titulo-marketing">
+									MARKETING
+								</h1>
+								<div class="fw-bold text-amber fst-italic fs-2 subtitulo-mix">
+									Mix
 								</div>
-							</nav>
-							<!-- Fin Navbar -->
+								<div
+									class="fw-bold text-white text-uppercase tracking-wider fs-4 subtitulo-week">
+									WEEK
+								</div>
+							</div> -->
+
 						</div>
+
+						<!-- 3. Descripción Inferior -->
+						<p class="text-secondary lh-base mx-auto mt-4 descripcion-mercadeo"
+							style="max-width: 800px;">
+							Semana de actualización académica, casos de éxito empresarial y
+							experiencias creativas aplicadas al ecosistema comercial y tecnológico
+							del SENA CGMLTI.
+						</p>
+
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
+		<div class="metrics-wrapper py-4">
+			<div class="container">
+				<div class="row g-3 justify-content-center">
 
-	<main class="container proy p-5">
-    <div class="row">
-	  <div class="col text-center pb-5">
-		<img src="img/logo-mercadeo.png" class="img-fluid" alt="Logotipo Mercadeo">
-	  </div>
-    </div>
-    <div class="row gy-5 fila justify-content-center">
-      <div class="col-lg-6 col-xl-4">
-        <div class="coord" data-url="mercadeo-pon.html">
-          <div class="icono-mercadeo">
-            <img src="img/icono-ponencias.png" alt="Ponencias" class="img-fluid">
-          </div>
-          <h4>Ponencias</h4>
-          <p>En el II Congreso de Actualización en Marketing, el jueves 29 de octubre en el auditorio SENA CGMLTI, se presentarán 8 ponencias sobre tendencias actuales como marketing en moda, social, turístico, analítica de datos y comportamiento del consumidor en dos jornadas (mañana y tarde).</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-xl-4">
-        <div class="coord" data-url="mercadeo-casos.html">
-          <div class="icono-mercadeo">
-            <img src="img/icono-casos.png" alt="Casos de éxito" class="img-fluid">
-          </div>
-          <h4>Casos de éxito</h4>
-          <p>Cuatro egresados destacados de mercadeo compartirán sus historias de vida, proceso formativo en el SENA y evolución profesional. Además, analizarán la actualidad del sector publicitario, UX, seguros y del rol del copywriter a partir de su experiencia en marcas líderes como McDonald's.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-xl-4">
-        <div class="coord">
-          <div class="icono-mercadeo">
-            <img src="img/icono-olimpiadas.png" alt="Olimpiadas del conocimiento" class="img-fluid">
-          </div>
-          <h4>Olimpiadas del conocimiento</h4>
-          <p>A lo largo de la semana del evento general (entre el lunes 26 y el viernes 30 de octubre), se realizará un concurso didáctico de conocimiento a través de plataformas digitales (Quizizz y/o Educaplay), que corresponde tanto a preguntas temáticas generales como específicas.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-xl-4">
-        <div class="coord">
-          <div class="icono-mercadeo">
-            <img src="img/icono-marketing.png" alt="Marketing Mix Strategy" class="img-fluid">
-          </div>
-          <h4>Marketing Mix Strategy</h4>
-          <p>Aprendices de Desarrollo de Procesos de Mercadeo, guiados por los instructores Juan Carlos Saavedra y Yury Montaña, aplicarán sus conocimientos creando exhibiciones tipo vitrina (abiertas y cerradas) en diferentes puntos del centro de formación, inspirados en temáticas creativas del universo de Harry Potter.</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-xl-4">
-        <div class="coord" data-url="mercadeo-sami.html">
-          <div class="icono-mercadeo">
-            <img src="img/icono-sami.png" alt="Marketiando con Sami" class="img-fluid">
-          </div>
-          <h4>Marketiando con Sami</h4>
-          <p>Esta producción audiovisual, protagonizada por el avatar de una aprendiz, llega a su 5ta temporada. Presentará 4 episodios sobre las Ps del mercadeo con casos reales: KFC (Producto), Spotify (Precio), OXXO (Plaza) y McDonald's (Promoción) para analizar datos curiosos de estrategias de marcas.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-
-	<footer class="container-fluid fondo-oscuro px-5 py-4">
-		<div class="row">
-			<div class="col">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 align-self-center text-center text-lg-start">
-							<img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI" class="logo-sena">
+					<!-- Tarjeta 1: JORNADAS TEMÁTICAS (Ámbar / Amarillo) -->
+					<div class="col-6 col-md-3">
+						<div
+							class="card-metrica metric-amber p-3 p-md-4 rounded-4 text-center h-100 d-flex flex-column justify-content-center">
+							<div class="number-stat text-amber fw-bold mb-1">05</div>
+							<span
+								class="label-stat text-secondary font-monospace text-uppercase">JORNADAS
+								TEMÁTICAS</span>
 						</div>
-						<div class="col-lg-8">
-							<div class="row">
-								<div class="col-12">
-									<p class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA 2026</strong> :: Ideas que compilan, talento que conecta</p>
+					</div>
+
+					<!-- Tarjeta 2: PONENCIAS EXPERTAS (Púrpura / Violeta) -->
+					<div class="col-6 col-md-3">
+						<div
+							class="card-metrica metric-purple p-3 p-md-4 rounded-4 text-center h-100 d-flex flex-column justify-content-center">
+							<div class="number-stat text-purple fw-bold mb-1">08</div>
+							<span
+								class="label-stat text-secondary font-monospace text-uppercase">PONENCIAS
+								EXPERTAS</span>
+						</div>
+					</div>
+
+					<!-- Tarjeta 3: EGRESADOS ÉLITE (Cian / Azul) -->
+					<div class="col-6 col-md-3">
+						<div
+							class="card-metrica metric-cyan p-3 p-md-4 rounded-4 text-center h-100 d-flex flex-column justify-content-center">
+							<div class="number-stat text-cyan fw-bold mb-1">04</div>
+							<span
+								class="label-stat text-secondary font-monospace text-uppercase">EGRESADOS
+								ÉLITE</span>
+						</div>
+					</div>
+
+					<!-- Tarjeta 4: CASOS REALES (Verde / Esmeralda) -->
+					<div class="col-6 col-md-3">
+						<div
+							class="card-metrica metric-emerald p-3 p-md-4 rounded-4 text-center h-100 d-flex flex-column justify-content-center">
+							<div class="number-stat text-emerald fw-bold mb-1">4 Ps</div>
+							<span
+								class="label-stat text-secondary font-monospace text-uppercase">CASOS
+								REALES</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="ejes-wrapper py-5">
+			<div class="container">
+
+				<!-- Encabezado de la Sección -->
+				<div
+					class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+					<h2 class="fw-bold text-white fs-4 mb-0 d-flex align-items-center gap-2">
+						<span class="bar-amber"></span> EJES &amp; ACTIVIDADES OFICIALES
+					</h2>
+					<div class="font-monospace text-secondary small"
+						style="font-size: 0.72rem;">
+						// SELECCIÓN DE CONTENIDO AUDITORIO &amp; DIGITAL
+					</div>
+				</div>
+
+				<!-- Fila 1: 3 Tarjetas (Ponencias, Casos de éxito, Olimpiadas) -->
+				<div class="row g-4 mb-4">
+
+					<!-- Tarjeta 1: Ponencias -->
+					<div class="col-12 col-md-6 col-lg-4">
+						<div
+							class="card-eje p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<span class="corner-glow top-left"></span>
+							<span class="corner-glow bottom-right"></span>
+
+							<div>
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 font-monospace">
+									<span
+										class="badge-pill-eje bg-amber-subtle text-amber border-amber">CONGRESO
+										// 29 OCTUBRE</span>
+									<span class="text-secondary opacity-50 small">MUESTRA 001</span>
 								</div>
-								<div class="col-12">
-									<p class="text-center text-lg-end copy"><strong>Desarrollo:</strong> Coordinación teleinformática</p>
+
+								<div class="text-center my-3" onclick="window.location.href='mercadeo-pon.html'" style="cursor: pointer;">
+									<div class="icon-gold-circle mx-auto mb-3">
+										<img src="img/icono-ponencias.png" alt="Icono de Ponencias" class="icon-ponencias">
+									</div>
+									<h3 class="fw-bold text-white fs-4 mb-3">Ponencias</h3>
+									<p class="text-secondary small lh-base mb-0 text-description">
+										En el II Congreso de Actualización en Marketing, el jueves 29 de
+										octubre en el auditorio SENA CGMLTI, se presentarán 8 ponencias sobre
+										tendencias actuales como marketing en moda, social, turístico,
+										analítica de datos y comportamiento del consumidor en dos jornadas
+										(mañana y tarde).
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace text-secondary small">
+								<span>AUDITORIO CGMLTI</span>
+								<span class="text-amber fw-bold">JORNADA DOBLE</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tarjeta 2: Casos de éxito -->
+					<div class="col-12 col-md-6 col-lg-4">
+						<div
+							class="card-eje p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<span class="corner-glow top-left"></span>
+							<span class="corner-glow bottom-right"></span>
+
+							<div>
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 font-monospace">
+									<span
+										class="badge-pill-eje bg-purple-subtle text-purple border-purple">EGRESADOS
+										&amp; EXPERIENCIA</span>
+									<span class="text-secondary opacity-50 small">MUESTRA 002</span>
+								</div>
+
+								<div class="text-center my-3" onclick="window.location.href='mercadeo-casos.html'" style="cursor: pointer;">
+									<div class="icon-gold-circle mx-auto mb-3">
+										<img src="img/icono-casos.png" alt="Icono de Casos de éxito" class="icon-ponencias">
+									</div>
+									<h3 class="fw-bold text-white fs-4 mb-3">Casos de éxito</h3>
+									<p class="text-secondary small lh-base mb-0 text-description">
+										Cuatro egresados destacados de mercadeo compartirán sus historias de
+										vida, proceso formativo en el SENA y evolución profesional. Además,
+										analizarán la actualidad del sector publicitario, UX, seguros y del
+										rol del copywriter a partir de su experiencia en marcas líderes como
+										McDonald's.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace text-secondary small">
+								<span>TALENTO SENA</span>
+								<span class="text-purple fw-bold">PANEL LÍDERES</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tarjeta 3: Olimpiadas del conocimiento -->
+					<div class="col-12 col-md-6 col-lg-4">
+						<div
+							class="card-eje p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<span class="corner-glow top-left"></span>
+							<span class="corner-glow bottom-right"></span>
+
+							<div>
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 font-monospace">
+									<span
+										class="badge-pill-eje bg-cyan-subtle text-cyan border-cyan">QUIZIZZ
+										&amp; EDUCAPLAY</span>
+									<span class="text-secondary opacity-50 small">MUESTRA 003</span>
+								</div>
+
+								<div class="text-center my-3">
+									<div class="icon-gold-circle mx-auto mb-3">
+										<img src="img/icono-olimpiadas.png" alt="Icono de Olimpiadas del conocimiento" class="icon-ponencias">
+									</div>
+									<h3 class="fw-bold text-white fs-4 mb-3">Olimpiadas del
+										conocimiento</h3>
+									<p class="text-secondary small lh-base mb-0 text-description">
+										A lo largo de la semana del evento general (entre el lunes 26 y el
+										viernes 30 de octubre), se realizará un concurso didáctico de
+										conocimiento a través de plataformas digitales (Quizizz y/o
+										Educaplay), que corresponde tanto a preguntas temáticas generales como
+										específicas.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace text-secondary small">
+								<span>GAMIFICACIÓN</span>
+								<span class="text-cyan fw-bold">26 - 30 OCTUBRE</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Fila 2: 2 Tarjetas Centradas (Marketing Mix Strategy, Marketiando con Sami) -->
+				<div class="row g-4 justify-content-center">
+
+					<!-- Tarjeta 4: Marketing Mix Strategy -->
+					<div class="col-12 col-md-6 col-lg-5">
+						<div
+							class="card-eje p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<span class="corner-glow top-left"></span>
+							<span class="corner-glow bottom-right"></span>
+
+							<div>
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 font-monospace">
+									<span
+										class="badge-pill-eje bg-purple-subtle text-purple border-purple">VITRINISMO
+										&amp; CREATIVIDAD</span>
+									<span class="text-secondary opacity-50 small">MUESTRA 004</span>
+								</div>
+
+								<div class="text-center my-3">
+									<div class="icon-gold-circle mx-auto mb-3">
+										<img src="img/icono-marketing.png" alt="Icono de Marketing Mix Strategy" class="icon-ponencias">
+									</div>
+									<h3 class="fw-bold text-white fs-4 mb-3">Marketing Mix Strategy</h3>
+									<p class="text-secondary small lh-base mb-0 text-description">
+										Aprendices de Desarrollo de Procesos de Mercadeo, guiados por los
+										instructores Juan Carlos Saavedra y Yury Montaña, aplicarán sus
+										conocimientos creando exhibiciones tipo vitrina (abiertas y cerradas)
+										en diferentes puntos del centro de formación, inspirados en temáticas
+										creativas del universo de Harry Potter.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace text-secondary small">
+								<span>PUNTOS SENA CGMLTI</span>
+								<span class="text-amber fw-bold">EXP. HARRY POTTER</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tarjeta 5: Marketiando con Sami -->
+					<div class="col-12 col-md-6 col-lg-5">
+						<div
+							class="card-eje p-4 rounded-4 h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+							<span class="corner-glow top-left"></span>
+							<span class="corner-glow bottom-right"></span>
+
+							<div>
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 font-monospace">
+									<span
+										class="badge-pill-eje bg-amber-subtle text-amber border-amber">SERIE
+										AUDIOVISUAL // 5TA TEMPORADA</span>
+									<span class="text-secondary opacity-50 small">MUESTRA 005</span>
+								</div>
+
+								<div class="text-center my-3" onclick="window.location.href='mercadeo-sami.html'" style="cursor: pointer;">
+									<div class="icon-gold-circle mx-auto mb-3">
+										<img src="img/icono-sami.png" alt="Icono de Marketiando con Sami" class="icon-ponencias">
+									</div>
+									<h3 class="fw-bold text-white fs-4 mb-3">Marketiando con Sami</h3>
+									<p class="text-secondary small lh-base mb-0 text-description">
+										Esta producción audiovisual, protagonizada por el avatar de una
+										aprendiz, llega a su 5ta temporada. Presentará 4 episodios sobre las 4
+										Ps del mercadeo con casos reales: KFC (Producto), Spotify (Precio),
+										OXXO (Plaza) y McDonald's (Promoción) para analizar datos curiosos de
+										estrategias de marcas.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center font-monospace text-secondary small">
+								<span>CANAL MULTIMEDIA</span>
+								<span class="text-cyan fw-bold">4 CASOS GLOBALES</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="invitacion-wrapper py-4">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-xl-10">
+
+						<!-- Tarjeta Principal con Contención Estricta -->
+						<div
+							class="card-invitacion p-3 p-md-4 rounded-4 border border-secondary border-opacity-25 shadow-lg overflow-hidden">
+							<div class="row align-items-center g-3">
+
+								<!-- Columna Izquierda: Icono + Textos -->
+								<div class="col-12 col-md-8 col-lg-8">
+									<div class="d-flex align-items-center gap-3">
+										<!-- Icono de Información -->
+										<div
+											class="icon-info-box rounded-3 d-flex align-items-center justify-content-center flex-shrink-0">
+											<i class="fa-solid fa-circle-info text-amber fs-5"></i>
+										</div>
+
+										<!-- Textos -->
+										<div class="text-start">
+											<h3
+												class="fw-bold text-white fs-6 text-uppercase mb-1 tracking-wide">
+												PARTICIPACIÓN DE LA COMUNIDAD SENA
+											</h3>
+											<p class="text-secondary small mb-0 lh-sm opacity-75"
+												style="font-size: 0.8rem;">
+												Todas las sesiones presenciales y retos digitales otorgan
+												certificación de asistencia a los aprendices inscritos.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Columna Derecha: Botón CTA Adaptable -->
+								<!-- <div class="col-12 col-md-4 col-lg-4 text-md-end text-center">
+									<a href="#horarios-evento"
+										class="btn btn-amber-glow font-monospace text-uppercase fw-bold px-3 py-2 rounded-3 text-dark d-inline-flex align-items-center justify-content-center gap-2 mw-100">
+										<span class="text-truncate">CONSULTAR HORARIOS</span>
+										<i class="fa-solid fa-arrow-right flex-shrink-0"></i>
+									</a>
+								</div> -->
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="container-fluid fondo-oscuro px-5 py-4">
+			<div class="row">
+				<div class="col">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 align-self-center text-center text-lg-start">
+								<img src="img/logo-sena-cgmlti.png" alt="Logotipo Sena - CGMLTI"
+									class="logo-sena">
+							</div>
+							<div class="col-lg-8">
+								<div class="row">
+									<div class="col-12">
+										<p
+											class="my-3 text-white text-center text-lg-end foot"><strong>CONEXIA
+												2026</strong> :: Ideas que compilan, talento que conecta</p>
+									</div>
+									<div class="col-12">
+										<p class="text-center text-lg-end copy"><strong>Desarrollo:</strong>
+											Coordinación teleinformática</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/iconos.js"></script>
-</body>
+		</footer>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/iconos.js"></script>
+	</body>
 </html>
