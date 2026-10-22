@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<script src="./js/componentes/header.js" defer></script>
-		<script src="https://www.youtube.com/iframe_api"></script>
+		<!-- <script src="https://www.youtube.com/iframe_api"></script> -->
 		<link rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
 			integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
@@ -231,18 +231,17 @@
 				</div>
 
 			</div>
-			<div class="row">
+			<!--<div class="row">
 				<div class="row justify-content-center">
 					<div class="col-12 col-xl-10">
-
-						<!-- Contenedor Principal del Reproductor -->
+ Contenedor Principal del Reproductor 
 						<div class="reproductor-frame">
 
-							<!-- 1. BARRA SUPERIOR (UI Ventana Estilo macOS) -->
+							1. BARRA SUPERIOR (UI Ventana Estilo macOS) 
 							<div
 								class="barra-superior d-flex align-items-center justify-content-between px-3 py-2 bg-dark bg-opacity-75 border-bottom border-secondary border-opacity-25">
 
-								<!-- Botones macOS & Título -->
+								 Botones macOS & Título
 								<div class="d-flex align-items-center gap-2">
 									<div class="d-flex gap-2 me-2">
 										<span class="btn-dot bg-danger"></span>
@@ -257,11 +256,11 @@
 									</span>
 								</div>
 
-								<!-- Botones y Controles Superiores -->
+								Botones y Controles Superiores 
 								<div
 									class="d-flex align-items-center gap-2 font-mono text-secondary small">
 
-									<!-- Control de Volumen Sincronizado -->
+									Control de Volumen Sincronizado 
 									<div
 										class="d-flex align-items-center gap-1 me-2 bg-dark bg-opacity-50 px-2 py-1 rounded border border-secondary border-opacity-25">
 										<button id="btn-mute" class="btn-control-icon p-0 px-1"
@@ -272,7 +271,7 @@
 											max="100" value="0" oninput="setVolume(this.value)">
 									</div>
 
-									<!-- Botón para Mostrar/Ocultar Cuadro de Texto -->
+									 Botón para Mostrar/Ocultar Cuadro de Texto 
 									<button id="btn-toggle-info"
 										class="btn btn-toggle-card rounded-pill px-2 px-md-3 py-1 font-mono d-flex align-items-center gap-1"
 										onclick="toggleCard()">
@@ -287,15 +286,16 @@
 								</div>
 							</div>
 
-							<!-- 2. ÁREA CENTRAL (Video IFrame & Capas Superpuestas) -->
+						2. ÁREA CENTRAL (Video IFrame & Capas Superpuestas) 
 							<div class="position-relative overflow-hidden">
 
-								<!-- Contenedor del IFrame de YouTube -->
-								<div class="video-container">
+							Contenedor del IFrame de YouTube 
+								<div class="video-container" id="youtube-container-wrapper"
+									data-video-id="Rk_AQUÍ_EL_ID_DE_TU_VIDEO">
 									<div id="youtube-player"></div>
 								</div>
 
-								<!-- Marca de agua representativa CGMLTI -->
+							Marca de agua representativa CGMLTI 
 								<div
 									class="position-absolute top-0 end-0 p-3 text-end font-mono text-secondary opacity-50 small pe-none z-1">
 									<div style="font-size: 0.65rem;">CGMLTI</div>
@@ -303,7 +303,7 @@
 										style="font-size: 0.75rem;">INLOGTIC</div>
 								</div>
 
-								<!-- TARJETA OCULTABLE (Cuadro de texto flotante) -->
+							TARJETA OCULTABLE (Cuadro de texto flotante) 
 								<div id="card-info"
 									class="card-texto-video position-absolute bottom-0 start-0 m-3 m-md-4 p-3 p-md-4 rounded-4 backdrop-blur">
 									<div class="d-flex justify-content-between align-items-start mb-2">
@@ -327,12 +327,12 @@
 								</div>
 							</div>
 
-							<!-- 3. BARRA INFERIOR (Estado y Reproducción) -->
+						3. BARRA INFERIOR (Estado y Reproducción) 
 							<div class="barra-inferior p-3 bg-dark bg-opacity-90 position-relative">
 								<div
 									class="d-flex justify-content-between align-items-center font-mono small text-secondary">
 
-									<!-- Controles de Play/Pausa -->
+								Controles de Play/Pausa 
 									<div class="d-flex align-items-center gap-3">
 										<button class="btn-control-icon p-0" title="Reproducir / Pausar"
 											onclick="togglePlay()">
@@ -344,7 +344,7 @@
 										</span>
 									</div>
 
-									<!-- Indicadores de Estado -->
+								Indicadores de Estado 
 									<div class="d-flex align-items-center gap-3">
 										<span class="text-cyan small">
 											<i class="fa-solid fa-tower-broadcast me-1"></i> Streaming Activo
@@ -363,7 +363,7 @@
 					</div>
 				</div>
 
-			</div>
+			</div>-->
 		</div>
 
 		<main class="container content-info">
@@ -764,10 +764,14 @@
 		</div>
 
 	</div>
-</div>	
+</div>
 <script>
     let player;
     let isMuted = true;
+
+	// Obtiene el ID del video directamente desde el atributo data-video-id del HTML
+	const videoWrapper = document.getElementById('youtube-container-wrapper');
+	const videoIdToPlay = videoWrapper ? videoWrapper.getAttribute('data-video-id') : 'dQw4w9WgXcQ'; // ID por defecto si no se encuentra
 
     // Cargar y configurar el reproductor de YouTube API
     function onYouTubeIframeAPIReady() {
@@ -779,7 +783,7 @@
                 'modestbranding': 1,
                 'rel': 0,
                 'loop': 1,
-                'playlist': 'qaNGodoRSz8',
+                'playlist': 'videoIdToPlay',
                 'mute': 1,             // Autoplay requiere silencio por políticas de navegadores
                 'playsinline': 1
             },
